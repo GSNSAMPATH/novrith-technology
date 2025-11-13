@@ -20,11 +20,11 @@ export default function Newerend() {
       className="text-white flex items-center overflow-hidden relativepx-6 lg:px-24 py-14"
       onMouseMove={handleMouseMove}
     >
-      <div className="container mx-auto ">
+      <div className="w-full mx-auto ">
         <div className="grid grid-cols-1 lg:grid-cols-10 gap-12 items-center">
           
           {/* LEFT: Text Section */}
-          <div className="lg:col-span-6 z-10 order-1 lg:order-2">
+          <div className="lg:col-span-6 z-10 order-1 lg:order-2 w-full">
             <div className="w-full ">
               {/* Animated Gradient Text */}
               <h1
@@ -49,7 +49,7 @@ export default function Newerend() {
               </p>
             </div>
           </div>
-        <div className="lg:col-span-4 flex justify-center items-center order-2 lg:order-1 h-[300px]">
+        <div className="lg:col-span-4 flex justify-center items-center w-full order-2 lg:order-1 h-[300px]">
              <AnimatedImage/>
         </div>
      

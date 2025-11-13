@@ -48,7 +48,7 @@ export default function ServicesSection() {
       };
 
   return (
-    <section className="bg-[#15191f] text-white py-30 px-6 md:px-20 text-center mt-16"
+    <section className="bg-[#15191f] text-white py-30 px-6 lg:px-24 text-center mt-16"
             onMouseMove={handleMouseMove}>
         <h1
             className="font-zendots tracking-wider leading-[100%] md:text-[40px] font-bold leading-tight"
