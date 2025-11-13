@@ -1,6 +1,13 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Inter, Zen_Dots } from "next/font/google";
 import "./globals.css";
+import Navbar from "./components/Navbar";
+
+const inter = Inter({
+  variable: "--font-inter",
+  weight: ["500"], // Medium
+  subsets: ["latin"],
+});
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -10,6 +17,12 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+});
+
+const  zenDots = Zen_Dots({
+  variable: "--font-zen-dots",
+  subsets: ["latin"],
+  weight: "400"
 });
 
 export const metadata: Metadata = {
@@ -24,8 +37,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Navbar />
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${inter.variable} ${geistMono.variable} ${zenDots.variable} antialiased`}
       >
         {children}
       </body>
