@@ -17,7 +17,7 @@ export default function Newerend() {
 
     return (
          <section
-      className="text-white flex items-center overflow-hidden relativepx-6 lg:px-24 py-14"
+      className="text-white flex items-center overflow-hidden relative px-6 lg:px-28 py-14"
       onMouseMove={handleMouseMove}
     >
       <div className="w-full mx-auto ">

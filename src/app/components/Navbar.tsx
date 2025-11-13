@@ -18,7 +18,7 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 w-full bg-[#030419] shadow-sm shadow-[#00B74A] text-white flex justify-between items-center px-6 lg:px-24 py-4 z-50">
+    <nav className="fixed top-0 left-0 w-full bg-[#030419] shadow-sm shadow-[#00B74A] text-white flex justify-between items-center px-6 lg:px-28 py-4 z-50">
       {/* Logo */}
       <Link href="/" className="flex items-center justify-start space-x-2">
         <Image

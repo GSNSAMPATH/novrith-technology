@@ -41,11 +41,11 @@ export default function ServicesSection() {
   ];
 
   return (
-    <section className="bg-white py-16 px-6 w-full px-6 lg:px-24 justify-center items-center"
+    <section className="bg-white py-16 px-6 w-full px-6 lg:px-28 justify-center items-center"
         onMouseMove={handleMouseMove}>
 
          {/* 🔹 Content */}
-      <div className="relative z-10 px-6 lg:px-24 mx-auto text-center w-full">
+      <div className="relative z-10  mx-auto text-center w-full">
 
         {/* Animated Gradient Title */}
         <h1

@@ -48,7 +48,7 @@ export default function ServicesSection() {
       };
 
   return (
-    <section className="bg-[#15191f] text-white py-30 px-6 lg:px-24 text-center mt-16"
+    <section className="bg-[#15191f] text-white py-30 px-6 lg:px-28 text-center mt-16"
             onMouseMove={handleMouseMove}>
         <h1
             className="font-zendots tracking-wider leading-[100%] md:text-[40px] font-bold leading-tight"
@@ -75,7 +75,7 @@ export default function ServicesSection() {
             whileHover={{ scale: 1.03, y: -4 }}
             className="bg-gray-700 border-1 border-[#15191f] text-left transition-colors text-white font-semibold relative after:content-[''] after:absolute after:right-0 after:top-0 after:w-6 after:h-full after:bg-[#15191f] after:[clip-path:polygon(0_0,100%_0,calc(100%_)_100%,10%_100%)] [clip-path:polygon(0_0,100%_0,calc(99%_-_35px)_100%,0%_100%)]"
           >
-            <div className="py-6 bg-[#030419] hover:bg-[#15191f] border-gray-700 border-2 border-[#15191f] text-left transition-colors text-white pr-10 px-8 py-3 font-semibold relative after:content-[''] after:absolute after:right-0 after:top-0 after:w-6 after:h-full after:bg-gray-700 [clip-path:polygon(0_0,100%_0,calc(99%_-_35px)_100%,0%_100%)]">
+            <div className="py-6 bg-[#030419] hover:bg-[#15191f] border-gray-700 border-2 border-[#15191f] text-left transition-colors text-white pr-10 px-8 py-3 font-semibold relative after:content-[''] after:absolute after:right-0 after:top-0 after:w-6 after:h-full after:bg-gray-700 [clip-path:polygon(0_0,100%_0,calc(99%_-_35px)_100%,0%_100%)] h-full">
             <div className="mb-4">{service.icon}</div>
             <h3 className="text-lg font-semibold mb-2">{service.title}</h3>
             <p className="text-gray-400 text-sm leading-relaxed">{service.desc}</p>
