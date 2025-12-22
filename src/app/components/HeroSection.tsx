@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 import { FaArrowRight } from "react-icons/fa";
 
 export default function HeroSection() {
@@ -26,18 +27,28 @@ export default function HeroSection() {
         muted
         playsInline
       >
-        <source src="/PixVerse_V5_Image_Text_360P_animate_this_image.mp4" type="video/mp4" />
+        <source
+          src="/PixVerse_V5_Image_Text_360P_animate_this_image.mp4"
+          type="video/mp4"
+        />
       </video>
 
       {/* 🔹 Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-[#00000070] via-[#00000040] to-[#030419] z-0"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-[#00000070] via-[#00000040] to-[#030419] z-0" />
 
       {/* 🔹 Content */}
-      <div className="relative z-10 px-6 lg:px-24 max-w-5xl mx-auto">
-
-        {/* Animated Gradient Title */}
-        <h1
-          className="font-zendots tracking-wide text-3xl md:text-5xl font-bold leading-tight mb-6"
+      <motion.div
+        className="relative z-10 px-6 lg:px-24 max-w-5xl mx-auto"
+        initial={{ opacity: 0, y: 40 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, ease: "easeOut" }}
+      >
+        {/* 🔥 Animated Gradient Title */}
+        <motion.h1
+          className="font-zendots tracking-wide text-[20px] md:text-[30px] lg:text-[40px] font-bold leading-tight mb-4 md:mb-6"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.3, duration: 0.8 }}
           style={{
             backgroundImage: `radial-gradient(at ${pos.x}% ${pos.y}%, #81f1b5 0%, #e9fffd 80%)`,
             WebkitBackgroundClip: "text",
@@ -46,47 +57,62 @@ export default function HeroSection() {
             transition: "background 0.2s ease",
           }}
         >
-          WE DESIGN THE FUTURE<br />
+          WE DESIGN THE FUTURE
+          <br />
           YOU EXPERIENCE IT
-        </h1>
+        </motion.h1>
 
         {/* Subtitle */}
-        <p className="text-gray-300 font-inter-medium max-w-2xl mx-auto leading-relaxed mb-10">
-          We create intelligent, design-driven digital solutions — from software
-          to AI systems — that power businesses, simplify lives, and shape
-          tomorrow.
-        </p>
+        <motion.p
+          className="text-[#888888] font-inter-medium text-[14px] md:text-[16px] lg:text-[20px] max-w-2xl mx-auto leading-relaxed mb-6 md:mb-10"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.6, duration: 0.8 }}
+        >
+          We create intelligent, design-driven digital solutions that bridge the
+          gap from software to AI systems that power businesses, simplify lives,
+          and shape tomorrow.
+        </motion.p>
 
         {/* Buttons */}
-        <div className="flex flex-wrap justify-center gap-6 mt-4">
-          {/* Start Project Button */}
-          <a
-            href="#start"
-            className="inline-flex items-center gap-3 bg-[#00B259] w-[300px] hover:bg-green-600 transition-colors text-white pr-10 px-8 py-3 font-semibold relative after:content-[''] after:absolute after:right-0 after:top-0 after:w-6 after:h-full after:bg-[#030421] [clip-path:polygon(0_0,100%_0,calc(99%_-_35px)_100%,0%_100%)]"
+        <motion.div
+          className="flex flex-wrap justify-center gap-6 md:gap-10 mt-4"
+          initial="hidden"
+          animate="show"
+          variants={{
+            hidden: {},
+            show: {
+              transition: { staggerChildren: 0.15 },
+            },
+          }}
+        >
+          <motion.button
+            variants={{
+              hidden: { opacity: 0, y: 20 },
+              show: { opacity: 1, y: 0 },
+            }}
+            // whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.97 }}
+            className="btn-green p-2 md:p-4 px-6 w-[200px] md:w-[250px] font-bold font-inter text-[12px] md:text-[16px] flex items-center justify-center gap-2"
           >
             START YOUR PROJECT
-            <FaArrowRight />
-          </a>
+          </motion.button>
 
-          {/* Watch Story Button */}
-          <button className="inline-flex items-center gap-3 bg-[#00B259] hover:bg-green-600 transition-colors text-black px-12  w-[300px] py-5 font-semibold relative after:content-[''] after:absolute after:right-0 after:top-0 after:w-6 after:h-full after:bg-[#030421] [clip-path:polygon(0_0,100%_0,calc(95%_-_22px)_100%,0_100%)]">
-                    <span
-                      className="absolute inset-[2px] bg-[#030421] z-0
-                      [clip-path:polygon(0_0,calc(100%_-_1px)_0,100%_50%,calc(100%_-_18px)_100%,0_100%)] w-[calc(100%-27px)] h-[calc(100%-5px)] transition-colors duration-300 group-hover:bg-[#00B259]"
-                    ></span>
-                    
-                    <span className="relative z-10 text-[#00a896] group-hover:text-white transition-colors duration-300">
-                      WATCH OUR STORY
-                      
-                    </span>
-                    <FaArrowRight className="relative rotate-310 text-[#00a896]" />
-
-
-
-                    
-                  </button>
-        </div>
-      </div>
+          <motion.button
+            variants={{
+              hidden: { opacity: 0, y: 20 },
+              show: { opacity: 1, y: 0 },
+            }}
+            // whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.97 }}
+            className="btn-green p-0.5 md:w-[250px] "
+          >
+            <div className="btn-green2 p-2 md:p-4 px-6 w-[200px] md:w-[250px] font-inter text-[12px] md:text-[16px] flex items-center justify-center">
+              WATCH OUR STORY
+            </div>
+          </motion.button>
+        </motion.div>
+      </motion.div>
     </section>
   );
 }

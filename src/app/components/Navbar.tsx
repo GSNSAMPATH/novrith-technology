@@ -26,6 +26,7 @@ export default function Navbar() {
           alt="Novrith Logo"
           width={160}
           height={160}
+          className="h-8 w-26 lg:h-12 lg:w-auto"
         />
       </Link>
 
@@ -49,9 +50,9 @@ export default function Navbar() {
       {/* Contact Button */}
       <Link
         href="/contact"
-        className="hidden md:block md:inline-flex items-center gap-3 bg-[#00B259] hover:bg-green-600 transition-colors px-4 py-1.5 font-semibold relative after:content-[''] after:absolute after:right-0 after:top-0 after:w-6 after:h-full after:bg-[#030419] [clip-path:polygon(0_0,100%_0,calc(99%_-_35px)_100%,0%_100%)]"
+        className="hidden md:block flex btn-green  px-3 lg:px-5 py-2 font-poppins font-semibold rounded-none text-[12px] lg:text-[16px] justify-center items-center"
       >
-        <span className="flex mr-6 text-white">CONTACT US</span>
+        <span className="flex items-center text-white">CONTACT US</span>
      
       </Link>
 

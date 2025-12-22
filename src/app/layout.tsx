@@ -37,7 +37,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Navbar />
+
       <body
         className={`${geistSans.variable} ${inter.variable} ${geistMono.variable} ${zenDots.variable} antialiased`}
       >
