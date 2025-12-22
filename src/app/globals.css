@@ -50,6 +50,15 @@ body {
   }
 }
 
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE & Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+
 .button-polygon {
   position: relative;
   clip-path: polygon(0 0, 100% 0, calc(95% - 20px) 100%, 0% 100%);

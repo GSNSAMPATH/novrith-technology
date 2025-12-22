@@ -9,7 +9,7 @@ import {
   FaBullhorn,
 } from "react-icons/fa";
 import { motion } from "framer-motion";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import Link from "next/link";
 
 const services = [
@@ -46,6 +46,8 @@ const services = [
 ];
 
 export default function ServicesSection() {
+  const sliderRef = useRef<HTMLDivElement>(null);
+  const [active, setActive] = useState(0);
   const [pos, setPos] = useState({ x: 50, y: 50 });
 
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
@@ -55,9 +57,19 @@ export default function ServicesSection() {
     setPos({ x, y });
   };
 
+    const handleScroll = () => {
+    if (!sliderRef.current) return;
+
+    const scrollX = sliderRef.current.scrollLeft;
+    const width = sliderRef.current.offsetWidth;
+    const index = Math.round(scrollX / width);
+
+    setActive(index);
+  };
+
   return (
     <section
-      className="bg-[#15191f] text-white py-32 px-6 lg:px-28 text-center mt-16 overflow-hidden"
+      className="bg-[#15191f] text-white py-12 md:py-32 px-6 lg:px-28 text-center mt-16 overflow-hidden"
       onMouseMove={handleMouseMove}
     >
       {/* Heading */}
@@ -66,7 +78,7 @@ export default function ServicesSection() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.8 }}
-        className="font-zendots tracking-wider md:text-[40px] font-bold mb-6"
+        className="font-zendots tracking-wider text-[20px] md:text-[30px] lg:text-[40px] font-bold leading-tight mb-4 md:mb-6"
         style={{
           backgroundImage: `radial-gradient(at ${pos.x}% ${pos.y}%, #81f1b5 0%, #f5f4f8ff 80%)`,
           WebkitBackgroundClip: "text",
@@ -84,16 +96,63 @@ export default function ServicesSection() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ delay: 0.2, duration: 0.7 }}
-        className="text-[#888888] font-inter-medium max-w-3xl mx-auto mb-10"
+        className="text-[#888888] font-inter-medium max-w-3xl text-[14px] md:text-[16px] lg:text-[20px] mx-auto leading-relaxed mb-6 md:mb-10"
       >
         Whether It's A Smart Web App, A Cross-Platform Mobile Experience, Or An
         AI-Powered IoT Solution — Our Expertise Ensures Your Product Is Reliable,
         Scalable, And Extraordinary.
       </motion.p>
 
+        {/* ================= MOBILE VIEW ================= */}
+    <div className="lg:hidden">
+      {/* Slider */}
+      <div
+        ref={sliderRef}
+        onScroll={handleScroll}
+        className="
+          flex gap-4 overflow-x-auto snap-x snap-mandatory
+          pb-6 scrollbar-hide
+        "
+      >
+        {services.map((service: any, i: number) => (
+          <div
+            key={i}
+            className="
+              min-w-[85%] snap-center
+              border border-[#2e8f67]
+              rounded-xl bg-[#0f1319] p-5
+            "
+          >
+            <div className="text-green-400 text-3xl mb-4">
+              {service.icon}
+            </div>
+            <h3 className="text-sm font-semibold mb-2">
+              {service.title}
+            </h3>
+            <p className="text-xs text-[#9aa0a6] leading-relaxed">
+              {service.desc}
+            </p>
+          </div>
+        ))}
+      </div>
+
+          {/* Dots */}
+      <div className="flex justify-center gap-2 mt-2 mb-10">
+        {services.map((_: any, i: number) => (
+          <span
+            key={i}
+            className={`
+              h-1.5 rounded-full transition-all duration-300
+              ${active === i ? "w-6 bg-green-400" : "w-3 bg-gray-600"}
+            `}
+          />
+        ))}
+      </div>
+        </div>
+
       {/* Services grid */}
       <motion.div
-        className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mx-auto"
+        className="hidden md:grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mx-auto"
         initial="hidden"
         whileInView="show"
         viewport={{ once: true }}
@@ -135,7 +194,7 @@ export default function ServicesSection() {
       >
         <Link
           href="/contact"
-          className="inline-flex mt-16 btn-green p-4 px-6 w-[250px] justify-center"
+          className="inline-flex md:mt-16 btn-green p-2 md:p-4 md:px-6 w-[200px] md:w-[250px] font-bold font-inter text-[12px] md:text-[16px] flex items-center justify-center"
         >
           SEE FULL SERVICE RANGE
         </Link>

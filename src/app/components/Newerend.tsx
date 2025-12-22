@@ -26,10 +26,10 @@ export default function Newerend() {
         viewport={{ once: true }}
         transition={{ duration: 0.9, ease: "easeOut" }}
       >
-        <div className="grid grid-cols-1 lg:grid-cols-10 gap-12 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-10 gap-12 items-center">
 
           {/* LEFT: Text */}
-          <div className="lg:col-span-7 z-10 order-1 w-full">
+          <div className="md:col-span-7 z-10 order-1 w-full">
             <div className="w-full">
 
               {/* Heading */}
@@ -88,7 +88,7 @@ export default function Newerend() {
 
           {/* RIGHT: Image */}
           <motion.div
-            className="lg:col-span-3 flex justify-center md:justify-end items-center absolute inset-0 top-15 w-full md:static order-2 h-[300px]"
+            className="md:col-span-3 flex justify-center md:justify-end items-center absolute inset-0 top-15 w-full md:static order-2 h-[300px]"
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.4, duration: 0.8 }}
