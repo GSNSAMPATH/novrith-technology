@@ -34,7 +34,7 @@ export default function Newerend() {
 
               {/* Heading */}
               <motion.h1
-                className="font-zendots tracking-wider leading-[100%] md:text-[40px] font-bold mb-6"
+                className="font-zendots tracking-wider leading-[100%] text-[20px] md:text-[30px] lg:text-[40px] font-bold leading-tight mb-4 md:mb-6"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.2, duration: 0.7 }}
@@ -51,7 +51,7 @@ export default function Newerend() {
 
               {/* Description */}
               <motion.p
-                className="font-inter-medium text-[#888888]"
+                className="text-[#888888] font-inter-medium text-[14px] md:text-[16px] lg:text-[20px] leading-relaxed mb-6 md:mb-10"
                 initial="hidden"
                 whileInView="show"
                 viewport={{ once: true }}
@@ -69,14 +69,14 @@ export default function Newerend() {
                 ].map((text, i) => (
                   <motion.span
                     key={i}
-                    className="block"
+                    className={`block ${i === 1 ? "mt-4 md:mt-6" : ""}`}
                     variants={{
                       hidden: { opacity: 0, y: 10 },
                       show: { opacity: 1, y: 0 },
                     }}
                   >
                     {i === 1 ? (
-                      <span className="text-green-400">{text}</span>
+                      <span className="text-green-400 mt-12">{text}</span>
                     ) : (
                       text
                     )}
@@ -88,7 +88,7 @@ export default function Newerend() {
 
           {/* RIGHT: Image */}
           <motion.div
-            className="lg:col-span-3 flex justify-end items-center order-2 h-[300px]"
+            className="lg:col-span-3 flex justify-center md:justify-end items-center absolute inset-0 top-15 w-full md:static order-2 h-[300px]"
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.4, duration: 0.8 }}

@@ -13,9 +13,9 @@ export default function Home() {
       <>
       <Navbar />
       <HeroSection />
-      {/* <Newerend />
+      <Newerend />
       <ServicesSection/>
-      <Projects/>
+      {/* <Projects/>
       <PoweredByInnovation/>
       <TrustedSection/>
       <StatsSection/>
