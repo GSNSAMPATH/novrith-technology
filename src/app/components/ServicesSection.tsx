@@ -118,11 +118,10 @@ export default function ServicesSection() {
           <div
             key={i}
             className="
-              min-w-[85%] snap-center
-              border border-[#2e8f67]
-              rounded-xl bg-[#0f1319] p-5
+              service-card2 min-w-[85%] snap-center p-[0.7px]
             "
           >
+          <div className="service-card p-6 text-left">
             <div className="text-green-400 text-3xl mb-4">
               {service.icon}
             </div>
@@ -132,6 +131,7 @@ export default function ServicesSection() {
             <p className="text-xs text-[#9aa0a6] leading-relaxed">
               {service.desc}
             </p>
+          </div>
           </div>
         ))}
       </div>
@@ -194,7 +194,7 @@ export default function ServicesSection() {
       >
         <Link
           href="/contact"
-          className="inline-flex md:mt-16 btn-green p-2 md:p-4 md:px-6 w-[200px] md:w-[250px] font-bold font-inter text-[12px] md:text-[16px] flex items-center justify-center"
+          className="inline-flex md:mt-16 btn-green p-2 md:p-4  w-[200px] md:w-[250px] font-bold font-inter text-[12px] md:text-[16px] flex items-center justify-center"
         >
           SEE FULL SERVICE RANGE
         </Link>
