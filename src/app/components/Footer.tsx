@@ -13,7 +13,7 @@ import {
 
 export default function Footer() {
   return (
-    <footer className="bg-black text-white px-6 lg:px-28 pt-20 pb-6">
+    <footer className="text-white px-6 lg:px-28 pt-20 pb-6">
       {/* Top Section */}
       <div className="grid grid-cols-1 md:grid-cols-3  gap-6 md:gap-14">
         {/* Brand */}
