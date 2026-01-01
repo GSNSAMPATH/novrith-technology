@@ -104,7 +104,7 @@ export default function ServicesSection() {
       </motion.p>
 
         {/* ================= MOBILE VIEW ================= */}
-    <div className="lg:hidden">
+    <div className="md:hidden">
       {/* Slider */}
       <div
         ref={sliderRef}
@@ -121,14 +121,14 @@ export default function ServicesSection() {
               service-card2 min-w-[85%] snap-center p-[0.7px]
             "
           >
-          <div className="service-card p-6 text-left">
+          <div className="service-card p-6 text-left h-[100%]">
             <div className="text-green-400 text-3xl mb-4">
               {service.icon}
             </div>
             <h3 className="text-sm font-semibold mb-2">
               {service.title}
             </h3>
-            <p className="text-xs text-[#9aa0a6] leading-relaxed">
+            <p className="text-xs text-[#9aa0a6] leading-relaxed line-clamp-2">
               {service.desc}
             </p>
           </div>
@@ -174,7 +174,7 @@ export default function ServicesSection() {
             transition={{ type: "spring", stiffness: 250 }}
             className="service-card2 cursor-pointer p-[0.7px]"
           >
-            <div className="service-card p-6 text-left">
+            <div className="service-card p-6 text-left h-[100%]">
               <div className="mb-4">{service.icon}</div>
               <h3 className="text-lg font-semibold mb-2">{service.title}</h3>
               <p className="text-gray-400 text-sm leading-relaxed">

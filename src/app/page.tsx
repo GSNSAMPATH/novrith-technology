@@ -16,10 +16,10 @@ export default function Home() {
       <Newerend />
       <ServicesSection/>
       <Projects/>
-      {/* <PoweredByInnovation/>
-      <TrustedSection/>
+      <PoweredByInnovation/>
+      {/* <TrustedSection/> */}
       <StatsSection/>
-      <TestimonialsSection/> */}
+      {/* <TestimonialsSection/> */}
       </>
   )
 }

@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 
 type Project = {
@@ -23,6 +23,16 @@ export default function Projects() {
     setPos({ x, y });
   };
 
+const sliderRef = useRef<HTMLDivElement>(null);
+const [active, setActive] = useState(0);
+
+const handleScroll = () => {
+  if (!sliderRef.current) return;
+  const scrollX = sliderRef.current.scrollLeft;
+  const width = sliderRef.current.offsetWidth;
+  setActive(Math.round(scrollX / width));
+};
+
   useEffect(() => {
     fetch("/api/projects")
       .then((res) => res.json())
@@ -43,7 +53,7 @@ export default function Projects() {
         transition={{ duration: 0.8 }}
       >
         <h1
-          className="font-zendots tracking-wide text-3xl md:text-5xl font-bold mb-6"
+          className="font-zendots tracking-wide text-[20px] md:text-[30px] lg:text-[40px] font-bold mb-6"
           style={{
             backgroundImage: `radial-gradient(at ${pos.x}% ${pos.y}%, #CA7DD5 0%, #15191F 50%, #948F9C 70%)`,
             WebkitBackgroundClip: "text",
@@ -62,7 +72,7 @@ export default function Projects() {
 
       {/* 🔹 Cards */}
       <motion.div
-        className="grid md:grid-cols-3 gap-8 w-full mx-auto"
+        className="hidden md:grid md:grid-cols-3 gap-8 w-full mx-auto"
         initial="hidden"
         whileInView="show"
         viewport={{ once: true }}
@@ -122,6 +132,76 @@ export default function Projects() {
           </motion.div>
         ))}
       </motion.div>
+      {/* ================= MOBILE VIEW ================= */}
+<div className="md:hidden">
+  {/* Slider */}
+  <div
+    ref={sliderRef}
+    onScroll={handleScroll}
+    className="
+      flex gap-4 overflow-x-auto snap-x snap-mandatory
+      pb-6 scrollbar-hide
+    "
+  >
+    {projects.map((project, i) => (
+      <div
+        key={i}
+        className="min-w-[85%] snap-center"
+      >
+        <motion.div
+          whileHover={{ scale: 1.03 }}
+          transition={{ stiffness: 200 }}
+          className="relative rounded-xl overflow-hidden p-4 flex flex-col text-white"
+          style={{
+            backgroundColor: "#030419",
+            clipPath:
+              "polygon(0 0, 100% 0, 100% calc(100% - 40px), calc(100% - 40px) 100%, 0 100%)",
+            boxShadow: "inset 0 0 0 1px #444",
+          }}
+        >
+          {/* Image */}
+          <div className="relative w-full h-[220px] mb-4 rounded-lg overflow-hidden">
+            <Image
+              src={project.image}
+              alt={project.title}
+              fill
+              className="object-cover"
+            />
+          </div>
+
+          <h3 className="text-base font-semibold mb-2">
+            {project.title}
+          </h3>
+
+          <p className="text-gray-400 text-sm mb-6 line-clamp-2">
+            {project.description}
+          </p>
+
+          <a
+            href={project.link}
+            className="mt-auto btn-green p-2 w-[180px] text-center text-xs"
+          >
+            SEE FULL SERVICE RANGE
+          </a>
+        </motion.div>
+      </div>
+    ))}
+  </div>
+
+  {/* Dots */}
+  <div className="flex justify-center gap-2 mt-2 mb-12">
+    {projects.map((_, i) => (
+      <span
+        key={i}
+        className={`
+          h-1.5 rounded-full transition-all duration-300
+          ${active === i ? "w-6 bg-green-400" : "w-3 bg-gray-400"}
+        `}
+      />
+    ))}
+  </div>
+</div>
+
     </section>
   );
 }
