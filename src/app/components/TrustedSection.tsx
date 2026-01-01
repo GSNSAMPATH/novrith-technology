@@ -1,5 +1,6 @@
 'use client';
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
 
 type Logo = {
@@ -56,12 +57,14 @@ export default function TrustedSection() {
           {logos.map((item, index) => (
             <div
               key={index}
-              className="xl:h-[84px] xl:w-[413px] bg-white rounded-md shadow-sm flex items-center justify-center"
+              className="h-[60px] xl:h-[84px] xl:w-[413px] bg-white rounded-md shadow-sm flex items-center justify-center"
             >
-              <img
+              <Image
                 src={item.logo}
                 alt="Trusted brand"
-                className=" object-contain rounded-md"
+                width={413}
+                height={84}
+                className=" object-contain rounded-md "
               />
             </div>
           ))}

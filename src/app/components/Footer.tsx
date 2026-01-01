@@ -15,24 +15,24 @@ export default function Footer() {
   return (
     <footer className="bg-black text-white px-6 lg:px-28 pt-20 pb-6">
       {/* Top Section */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-14">
+      <div className="grid grid-cols-1 md:grid-cols-3  gap-6 md:gap-14">
         {/* Brand */}
         <div>
           <div className="flex items-center gap-3 mb-6">
             <Image
               src="/Novrith_DM-02.png" // 🔁 replace with your logo
               alt="Novrith"
-              width={42}
-              height={42}
-              className="w-[200px]"
+              width={142}
+              height={142}
+              className="md:w-[200px]"
             />
           </div>
 
-          <p className="text-gray-300 mb-6 leading-relaxed">
+          <p className="text-gray-300 mb-4 md:mb-6 font-normal font-inter text-[12px] md:text-[16px]">
             Your Vision. Our <br /> Technology.
           </p>
 
-          <div className="space-y-3 text-gray-300 text-sm">
+          <div className=" space-y-2 md:space-y-3 text-gray-300 font-normal font-inter text-[12px] md:text-[16px]">
             <p className="flex items-center gap-3">
               <FaMapMarkerAlt />
               Colombo, Sri Lanka
@@ -47,7 +47,7 @@ export default function Footer() {
         {/* Company Column 1 */}
         <div>
           <h3 className="text-xl font-semibold mb-6">Company</h3>
-          <ul className="space-y-4 text-gray-300">
+          <ul className="space-y-2 md:space-y-4 text-gray-300 font-normal font-inter text-[12px] md:text-[16px]">
             <li>
               <Link href="/about" className="hover:text-white transition">
                 About Us
@@ -69,7 +69,7 @@ export default function Footer() {
         {/* Company Column 2 */}
         <div>
           <h3 className="text-xl font-semibold mb-6">Company</h3>
-          <ul className="space-y-4 text-gray-300">
+          <ul className=" space-y-2 md:space-y-4 text-gray-300 font-normal font-inter text-[12px] md:text-[16px]">
             <li>
               <Link href="/about" className="hover:text-white transition">
                 About Us
@@ -94,8 +94,9 @@ export default function Footer() {
 
       {/* Bottom Bar */}
       <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-        <p className="text-sm text-gray-400 text-center md:text-left">
-          Copyright © 2025 Novrith Technology. All rights reserved
+        <p className="font-normal font-inter text-[12px] md:text-[16px] text-gray-400 text-center md:text-left">
+          Copyright © 2025 Novrith Technology.
+          <br className="md:hidden" /> All rights reserved
         </p>
 
         <div className="flex gap-3">
