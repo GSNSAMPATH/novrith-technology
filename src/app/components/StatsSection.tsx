@@ -48,12 +48,12 @@ export default function StatsSection() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: i * 0.15 }}
             >
-              <h3 className="text-[20px] md:text-[60px] font-extrabold">
+              <h3 className="text-[40px] md:text-[60px] lg:text-[80px] font-extrabold">
                 <AnimatedNumber value={stat.value} />
                 {stat.suffix}
               </h3>
 
-              <p className="mt-4 text-[12px] md:text-[16px] tracking-widest uppercase text-gray-300">
+              <p className="mt-4 text-[16px] md:text-[24px] lg:text-[32px] tracking-widest uppercase text-gray-300">
                 {stat.label.split(" ").map((word, i) => (
                   <span key={i}>
                     {word}

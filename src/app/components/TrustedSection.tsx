@@ -61,7 +61,7 @@ export default function TrustedSection() {
           {logos.map((item, index) => (
             <div
               key={index}
-              className={`h-[60px] xl:h-[84px] xl:w-[413px] ${index === 0 ? "bg-black" : "bg-white"}  rounded-md shadow-sm flex items-center justify-center`}
+              className={`h-[60px] xl:h-[84px] w-full 2xl:w-[413px] ${index === 0 ? "bg-black" : "bg-white"}  rounded-md shadow-sm flex items-center justify-center`}
             >
               <Image
                 src={item.logo}

@@ -72,7 +72,7 @@ const handleScroll = () => {
 
       {/* 🔹 Cards */}
       <motion.div
-        className="hidden md:grid md:grid-cols-3 gap-8 w-full mx-auto"
+        className="hidden md:grid md:grid-cols-3 gap-6 lg:gap-8 w-full mx-auto"
         initial="hidden"
         whileInView="show"
         viewport={{ once: true }}
@@ -125,7 +125,7 @@ const handleScroll = () => {
               href={projects.link}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="mt-auto btn-green p-4 px-2 w-[250px] text-center text-sm"
+              className="mt-auto btn-green p-4 px-2 w-fit lg:w-[250px] text-center text-sm"
             >
               SEE FULL SERVICE RANGE
             </motion.a>
@@ -160,7 +160,7 @@ const handleScroll = () => {
           }}
         >
           {/* Image */}
-          <div className="relative w-full h-[220px] mb-4 rounded-lg overflow-hidden">
+          <div className="relative w-full h-[170px] sm:h-[220px] mb-4 rounded-lg overflow-hidden">
             <Image
               src={project.image}
               alt={project.title}
