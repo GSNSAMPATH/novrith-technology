@@ -36,8 +36,8 @@ export default function MissionVisionSection() {
 
 
   return (
-    <section className="w-full py-12 md:py-20 px-6 lg:px-28">
-      <div className="hidden md:block mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+    <section className="w-full py-12 px-6 lg:px-28">
+      <div className="hidden  mx-auto md:grid grid-cols-1 md:grid-cols-2 gap-8">
         {missionVision.map((item, i) => (
           <motion.div
             key={i}
@@ -90,18 +90,20 @@ export default function MissionVisionSection() {
               className="service-card4 min-w-[90%] snap-center p-[2px]"
             >
               <div className="service-card3 p-6 h-full">
-                <h1 className="font-zendots tracking-wide text-[20px] md:text-[30px] lg:text-[40px] font-bold leading-tight mb-4 md:mb-6"
+                <h1
+                        className="font-zendots tracking-wide text-[20px] md:text-[30px] lg:text-[40px] font-bold leading-tight mb-4 md:mb-6"
                         style={{
                           backgroundImage: `radial-gradient(at ${pos.x}% ${pos.y}%, #81f1b5 0%, #e9fffd 80%)`,
                           WebkitBackgroundClip: "text",
                           WebkitTextFillColor: "transparent",
                           color: "transparent",
                           transition: "background 0.2s ease",
-                        }}>
+                        }}
+                      >
                   {item.title}
                 </h1>
 
-                <p className="text-[#888888] font-inter-medium text-[14px] md:text-[16px] lg:text-[20px] max-w-2xl mx-auto leading-relaxed ">
+                <p className="text-[#888888] font-inter-medium text-[14px] md:text-[16px] lg:text-[20px] max-w-2xl mx-auto leading-relaxed line-clamp-18">
                   {item.content}
                 </p>
 
