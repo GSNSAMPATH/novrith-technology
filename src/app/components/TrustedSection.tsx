@@ -1,6 +1,7 @@
 'use client';
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 
 type Logo = {
@@ -28,10 +29,13 @@ export default function TrustedSection() {
     <section className="bg-[#e5e5e5] md:py-20 py-12 px-6 w-full px-6 lg:px-28 justify-center items-center"
     onMouseMove={handleMouseMove}>
         
-      <div className="mx-auto px- text-center">
+      <div className="mx-auto  text-center">
         {/* Heading */}
         {/* Animated Gradient Title */}
-        <h1
+        <motion.h1
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.3, duration: 0.8 }}
           className="font-zendots tracking-wide text-[20px] md:text-[30px] lg:text-[40px] font-bold leading-tight mb-6"
           style={{
             backgroundImage: `radial-gradient(at ${pos.x}% ${pos.y}%, #CA7DD5 20%, #15191F 50%, #948F9C 70%)`,
@@ -43,7 +47,7 @@ export default function TrustedSection() {
         >
           Trusted by Visionaries, Loved by<br />
           Businesses.
-        </h1>
+        </motion.h1>
 
 
         {/* Subtitle */}
@@ -57,7 +61,7 @@ export default function TrustedSection() {
           {logos.map((item, index) => (
             <div
               key={index}
-              className="h-[60px] xl:h-[84px] xl:w-[413px] bg-white rounded-md shadow-sm flex items-center justify-center"
+              className={`h-[60px] xl:h-[84px] xl:w-[413px] ${index === 0 ? "bg-black" : "bg-white"}  rounded-md shadow-sm flex items-center justify-center`}
             >
               <Image
                 src={item.logo}

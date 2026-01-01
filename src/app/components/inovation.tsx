@@ -86,7 +86,7 @@ export default function PoweredByInnovation() {
                 {allLogos.map((logo, i) => (
                   <div
                     key={i}
-                    className="flex-shrink-0 flex items-center justify-center
+                    className="flex-shrink-0 flex border border-gray-600/30 items-center justify-center
                     bg-[#121212] rounded-xl
                     w-[90px] h-[90px]
                     sm:w-[140px] sm:h-[140px]
@@ -110,7 +110,7 @@ export default function PoweredByInnovation() {
                 {allLogos2.map((logo, i) => (
                   <div
                     key={i}
-                    className="flex-shrink-0 flex items-center justify-center
+                    className="flex-shrink-0 flex border border-gray-600/30  items-center justify-center
                     bg-[#121212] rounded-xl
                     w-[90px] h-[90px]
                     sm:w-[140px] sm:h-[140px]

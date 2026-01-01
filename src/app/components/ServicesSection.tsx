@@ -128,7 +128,7 @@ export default function ServicesSection() {
             <h3 className="text-sm font-semibold mb-2">
               {service.title}
             </h3>
-            <p className="text-xs text-[#9aa0a6] leading-relaxed line-clamp-2">
+            <p className="text-xs text-[#9aa0a6] leading-relaxed  line-clamp-2">
               {service.desc}
             </p>
           </div>
@@ -176,8 +176,8 @@ export default function ServicesSection() {
           >
             <div className="service-card p-6 text-left h-[100%]">
               <div className="mb-4">{service.icon}</div>
-              <h3 className="text-lg font-semibold mb-2">{service.title}</h3>
-              <p className="text-gray-400 text-sm leading-relaxed">
+              <h3 className="text-lg font-semibold mb-2 font-inter-medium text-[14px] md:text-[16px] lg:text-[20px]">{service.title}</h3>
+              <p className="text-gray-400 font-inter-medium text-[12px] md:text-[14px] lg:text-[16px] leading-relaxed">
                 {service.desc}
               </p>
             </div>
