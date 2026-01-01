@@ -205,10 +205,10 @@ body {
 
     /* angled border using your 4-gradient system */
     background:
-      linear-gradient(0deg, transparent 0, #454645 0) top left,
+      linear-gradient(0deg, transparent 0, #445544 0) top left,
       linear-gradient(0deg, transparent 0, #454645 0) top right,
       linear-gradient(0deg, transparent 0, #454645 0) bottom left,
-      linear-gradient(-45deg, transparent 1rem, #454645 0) bottom right;
+      linear-gradient(-45deg, transparent 1rem, #4d444a 0) bottom right;
 
     background-size: 51% 51%;
     background-repeat: no-repeat;

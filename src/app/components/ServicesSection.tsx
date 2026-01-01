@@ -14,32 +14,32 @@ import Link from "next/link";
 
 const services = [
   {
-    icon: <FaLaptopCode className="text-3xl text-green-400" />,
+    icon: <FaLaptopCode className="text-3xl text-gray-300" />,
     title: "WEB DEVELOPMENT",
     desc: "Modern, Secure, And High-Performing Websites Using Next.Js.",
   },
   {
-    icon: <FaMobileAlt className="text-3xl text-green-400" />,
+    icon: <FaMobileAlt className="text-3xl text-gray-300" />,
     title: "MOBILE APP DEVELOPMENT",
     desc: "Native And Cross-Platform Apps Built With Flutter And React Native.",
   },
   {
-    icon: <FaBrain className="text-3xl text-green-400" />,
+    icon: <FaBrain className="text-3xl text-gray-300" />,
     title: "AI & MACHINE LEARNING",
     desc: "Intelligent Models And Predictive Systems Powered By Python And Tensorflow.",
   },
   {
-    icon: <FaNetworkWired className="text-3xl text-green-400" />,
+    icon: <FaNetworkWired className="text-3xl text-gray-300" />,
     title: "IOT & SMART SYSTEMS",
     desc: "Real-Time Connected Systems Using ESP32, Arduino, And Cloud Dashboard.",
   },
   {
-    icon: <FaPaintBrush className="text-3xl text-green-400" />,
+    icon: <FaPaintBrush className="text-3xl text-gray-300" />,
     title: "BRANDING & DESIGN",
     desc: "Visual Storytelling Through Logos, UI/UX Design, And Brand Identity.",
   },
   {
-    icon: <FaBullhorn className="text-3xl text-green-400" />,
+    icon: <FaBullhorn className="text-3xl text-gray-300" />,
     title: "DIGITAL MARKETING",
     desc: "Data-Driven Marketing And SEO To Help Your Brand Grow Online.",
   },
@@ -118,7 +118,7 @@ export default function ServicesSection() {
           <div
             key={i}
             className="
-              service-card2 min-w-[85%] snap-center p-[0.7px]
+              service-card2 min-w-[85%] snap-center p-[1.7px]
             "
           >
           <div className="service-card p-6 text-left h-[100%]">
@@ -172,12 +172,12 @@ export default function ServicesSection() {
             }}
             whileHover={{ scale: 1.03, y: -4 }}
             transition={{ type: "spring", stiffness: 250 }}
-            className="service-card2 cursor-pointer p-[0.7px]"
+            className="service-card2 cursor-pointer p-[1.7px]"
           >
             <div className="service-card p-6 text-left h-[100%]">
               <div className="mb-4">{service.icon}</div>
               <h3 className="text-lg font-semibold mb-2 font-inter-medium text-[14px] md:text-[16px] lg:text-[20px]">{service.title}</h3>
-              <p className="text-gray-400 font-inter-medium text-[12px] md:text-[14px] lg:text-[16px] leading-relaxed">
+              <p className="text-white font-inter-medium text-[12px] md:text-[14px] lg:text-[16px] leading-relaxed">
                 {service.desc}
               </p>
             </div>

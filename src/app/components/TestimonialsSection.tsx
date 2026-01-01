@@ -70,7 +70,7 @@ export default function TestimonialsSection() {
               key={i}
               whileHover={{ scale: 1.03, y: -4 }}
               transition={{ type: "spring", stiffness: 300 }}
-              className="service-card2 cursor-pointer p-[0.7px]"
+              className="service-card2 cursor-pointer p-[1.7px]"
             >
               <div className="service-card p-6 text-left">
                 <h2 className="text-3xl font-bold mb-4">“</h2>
@@ -97,10 +97,10 @@ export default function TestimonialsSection() {
                 <motion.div
                   whileHover={{ scale: 1.03 }}
                   transition={{ stiffness: 300 }}
-                  className="service-card2 p-[0.7px]"
+                  className="service-card2 p-[1.7px]"
                 >
                   <div className="service-card p-6 text-left">
-                    <h2 className="text-3xl font-bold mb-4">“</h2>
+                    <h2 className="text-3xl font-bold ">“</h2>
                     <p className="mb-4 text-gray-300 text-sm leading-relaxed line-clamp-4">
                       {item.description}
                     </p>
