@@ -30,14 +30,14 @@ function AnimatedNumber({ value }: { value: number }) {
 
 export default function StatsSection() {
   const stats = [
-    { value: 50, suffix: "+", label: "Projects Completed" },
+    { value: 5, suffix: "+", label: "Projects Completed" },
     { value: 5, suffix: "+", label: "Countries Served" },
-    { value: 10, suffix: "+", label: "Industries Transformed" },
+    { value: 1, suffix: "+", label: "Industries Transformed" },
     { value: 98, suffix: "%", label: "Client Retention Rate" },
   ];
 
   return (
-    <section className="py-20 bg-[#0b0f14]">
+    <section className="py-20 ">
       <div className="px-6 lg:px-28">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-12 text-center text-white">
           {stats.map((stat, i) => (
@@ -48,12 +48,12 @@ export default function StatsSection() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: i * 0.15 }}
             >
-              <h3 className="text-5xl lg:text-6xl font-extrabold">
+              <h3 className="text-[20px] md:text-[60px] font-extrabold">
                 <AnimatedNumber value={stat.value} />
                 {stat.suffix}
               </h3>
 
-              <p className="mt-4 text-sm tracking-widest uppercase text-gray-300">
+              <p className="mt-4 text-[12px] md:text-[16px] tracking-widest uppercase text-gray-300">
                 {stat.label.split(" ").map((word, i) => (
                   <span key={i}>
                     {word}

@@ -24,14 +24,14 @@ export default function TrustedSection() {
   };
       
   return (
-    <section className="bg-[#e5e5e5] py-20  py-16 px-6 w-full px-6 lg:px-28 justify-center items-center"
+    <section className="bg-[#e5e5e5] md:py-20 py-12 px-6 w-full px-6 lg:px-28 justify-center items-center"
     onMouseMove={handleMouseMove}>
         
       <div className="mx-auto px- text-center">
         {/* Heading */}
         {/* Animated Gradient Title */}
         <h1
-          className="font-zendots tracking-wide text-3xl md:text-5xl font-bold leading-tight mb-6"
+          className="font-zendots tracking-wide text-[20px] md:text-[30px] lg:text-[40px] font-bold leading-tight mb-6"
           style={{
             backgroundImage: `radial-gradient(at ${pos.x}% ${pos.y}%, #CA7DD5 20%, #15191F 50%, #948F9C 70%)`,
             WebkitBackgroundClip: "text",
@@ -46,17 +46,17 @@ export default function TrustedSection() {
 
 
         {/* Subtitle */}
-        <p className="mt-6 max-w-3xl mx-auto text-gray-600 text-sm md:text-base">
+        <p className="mt-6 max-w-3xl mx-auto text-gray-600 font-inter-medium text-[14px] md:text-[16px] lg:text-[20px]">
           We Create Intelligent, Design-Driven Digital Solutions From
           Software To AI Systems. That Power Businesses, Simplify Lives,
           And Shape Tomorrow.
         </p>
         {/* Logos Only */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-12 mt-12">
+        <div className="grid grid-cols-2 sm:grid-cols-3 gap-6 xl:gap-12 mt-12">
           {logos.map((item, index) => (
             <div
               key={index}
-              className="h-[84px] w-[413px] bg-white rounded-md shadow-sm flex items-center justify-center"
+              className="xl:h-[84px] xl:w-[413px] bg-white rounded-md shadow-sm flex items-center justify-center"
             >
               <img
                 src={item.logo}

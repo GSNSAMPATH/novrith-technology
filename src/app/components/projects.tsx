@@ -41,7 +41,7 @@ const handleScroll = () => {
 
   return (
     <section
-      className="bg-white py-20 px-6 lg:px-28 overflow-hidden"
+      className="bg-[#e5e5e5] py-12 md:py-20 px-6 lg:px-28 overflow-hidden"
       onMouseMove={handleMouseMove}
     >
       {/* 🔹 Header */}
@@ -53,7 +53,7 @@ const handleScroll = () => {
         transition={{ duration: 0.8 }}
       >
         <h1
-          className="font-zendots tracking-wide text-[20px] md:text-[30px] lg:text-[40px] font-bold mb-6"
+          className="font-zendots tracking-wide text-[20px] md:text-[30px] lg:text-[40px] font-bold mb-4 md:mb-6"
           style={{
             backgroundImage: `radial-gradient(at ${pos.x}% ${pos.y}%, #CA7DD5 0%, #15191F 50%, #948F9C 70%)`,
             WebkitBackgroundClip: "text",
@@ -65,7 +65,7 @@ const handleScroll = () => {
           Our Latest Projects
         </h1>
 
-        <p className="text-[#525252] max-w-2xl mx-auto leading-relaxed mb-14">
+        <p className="text-[#525252] max-w-2xl mx-auto leading-relaxed mb-6 md:mb-14">
           Here are some of the latest projects we have worked on.
         </p>
       </motion.div>
@@ -88,9 +88,9 @@ const handleScroll = () => {
               hidden: { opacity: 0, y: 40 },
               show: { opacity: 1, y: 0 },
             }}
-            whileHover={{ scale: 1.05 }}
+            whileHover={{ scale: 1.02 }}
             transition={{stiffness: 200 }}
-            className="relative rounded-xl overflow-hidden p-6 flex flex-col text-white"
+            className="relative rounded-xl overflow-hidden p-6 flex flex-col text-white xl:h-[550px]"
             style={{
               backgroundColor: "#030419",
               clipPath:
@@ -116,7 +116,7 @@ const handleScroll = () => {
             <h3 className="text-lg font-semibold mb-2">
               {projects.title}
             </h3>
-            <p className="text-gray-400 text-sm mb-6 line-clamp-2">
+            <p className="text-gray-400 text-sm mb-6 line-clamp-2 xl:line-clamp-5">
               {projects.description}
             </p>
 

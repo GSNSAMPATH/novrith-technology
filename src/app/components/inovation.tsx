@@ -31,7 +31,7 @@ export default function PoweredByInnovation() {
   return (
     <section
       onMouseMove={handleMouseMove}
-      className="w-full text-white py-20 px-6 lg:px-28"
+      className="w-full text-white py-1 md:py-20 px-6 lg:px-28"
     >
       <motion.div
         className="flex flex-col lg:flex-row w-full gap-14"
@@ -79,21 +79,26 @@ export default function PoweredByInnovation() {
 
         {/* RIGHT CONTENT */}
         <div className="w-full lg:w-3/5 relative h-[280px]  lg:h-[800px] xl:h-[700px]">
-          <div className="flex lg:flex-row flex-col  gap-6 lg:gap-10 h-full">
+          <div className="flex lg:flex-row flex-col  gap-4 lg:gap-10 h-full">
             {/* Column 1 */}
             <div className="relative overflow-hidden w-full">
-              <div className="marquee-col-1 flex flex-row lg:flex-col gap-6 lg:gap-10">
+              <div className="marquee-col-1 flex flex-row lg:flex-col gap-4 lg:gap-10">
                 {allLogos.map((logo, i) => (
                   <div
                     key={i}
                     className="flex-shrink-0 flex items-center justify-center
                     bg-[#121212] rounded-xl
-                    w-[120px] h-[120px]
+                    w-[90px] h-[90px]
                     sm:w-[140px] sm:h-[140px]
                     lg:w-[180px] lg:h-[180px]
                     xl:w-full xl:h-[260px]"
                   >
-                    <Image src={logo.img} alt={logo.title} width={90} height={90} />
+                    <Image 
+                    src={logo.img} 
+                    alt={logo.title} 
+                    width={90} 
+                    height={90}
+                    className="w-10 md:w-20 lg:w-30 xl:w-40" />
                   </div>
                 ))}
               </div>
@@ -101,18 +106,23 @@ export default function PoweredByInnovation() {
 
             {/* Column 2 */}
             <div className="relative overflow-hidden w-full">
-              <div className="marquee-col-2 flex flex-row lg:flex-col gap-6 lg:gap-10">
+              <div className="marquee-col-2 flex flex-row lg:flex-col gap-4 lg:gap-10">
                 {allLogos2.map((logo, i) => (
                   <div
                     key={i}
                     className="flex-shrink-0 flex items-center justify-center
                     bg-[#121212] rounded-xl
-                    w-[120px] h-[120px]
+                    w-[90px] h-[90px]
                     sm:w-[140px] sm:h-[140px]
                     lg:w-[180px] lg:h-[180px]
                     xl:w-full xl:h-[260px]"
                   >
-                    <Image src={logo.img} alt={logo.title} width={90} height={90} />
+                    <Image 
+                    src={logo.img} 
+                    alt={logo.title} 
+                    width={90} 
+                    height={90} 
+                    className="w-10 md:w-20 lg:w-30 xl:w-40"/>
                   </div>
                 ))}
               </div>

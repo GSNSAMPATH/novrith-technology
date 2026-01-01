@@ -17,9 +17,9 @@ export default function Home() {
       <ServicesSection/>
       <Projects/>
       <PoweredByInnovation/>
-      {/* <TrustedSection/> */}
+      <TrustedSection/>
       <StatsSection/>
-      {/* <TestimonialsSection/> */}
+      <TestimonialsSection/>
       </>
   )
 }
