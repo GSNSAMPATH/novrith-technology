@@ -88,7 +88,7 @@ export default function Team() {
               show: { opacity: 1, y: 0 },
             }}
             whileHover={{ scale: 1.02 }}
-            className="relative rounded-xl overflow-hidden p-6 flex flex-col text-white xl:h-[520px]"
+            className="relative rounded-xl overflow-hidden p-6 flex flex-col text-white "
             style={{
               backgroundColor: "#030419",
               clipPath:
@@ -104,7 +104,7 @@ export default function Team() {
               {member.name}
             </h3>
 
-            <div className="relative w-full h-[240px] mb-4 rounded-lg overflow-hidden">
+            <div className="relative w-full h-[340px] mb-4 rounded-lg overflow-hidden">
               <Image
                 src={member.image}
                 alt={member.name}

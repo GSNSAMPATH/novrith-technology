@@ -354,3 +354,37 @@ body {
   }
 }
 
+@layer components {
+  .service-glow {
+    position: relative;
+    isolation: isolate;
+  }
+
+  .service-glow::before {
+    content: "";
+    position: absolute;
+    inset: -40px;
+    z-index: -1;
+    margin-inline: 100px;
+
+    background:
+      radial-gradient(
+        0% 40% at 50% 0%,
+        rgba(34, 197, 94, 0.45),
+        transparent 60%
+      ),
+      linear-gradient(
+        to right,
+        rgba(34, 197, 94, 0.35),
+        transparent 25%,
+        transparent 75%,
+        rgba(34, 197, 94, 0.35)
+      );
+
+    filter: blur(45px);
+    opacity: 0.9;
+    pointer-events: none;
+  }
+}
+
+
