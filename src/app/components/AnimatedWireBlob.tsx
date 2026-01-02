@@ -23,7 +23,7 @@ export default function AnimatedImage() {
         }}
       >
         <Image
-          src="/unsplash_JaR1PBdUB58.png"
+          src="/icons8-settings-10802.png"
           alt="Glowing shape"
           width={400}
           height={400}

@@ -66,19 +66,24 @@ export default function CoreValuesSection() {
         </motion.h1>
 
         {/* Cards */}
-        <div className="hidden md:grid grid-cols-1 md:grid-cols-3 gap-8">
+        <motion.div
+         className="hidden md:grid grid-cols-1 md:grid-cols-3 gap-8"
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true }}
+          variants={{
+          hidden: {},
+          show: { transition: { staggerChildren: 0.15 } },
+        }}>
           {coreValues.map((value, i) => (
             <motion.div
               key={i}
-              variants={{
-                hidden: { opacity: 0, y: 30 },
-                show: { opacity: 1, y: 0 },
-              }}
-              initial="hidden"
-              whileInView="show"
-              viewport={{ once: true }}
-              whileHover={{ scale: 1.03, y: -4 }}
-              transition={{ type: "spring", stiffness: 250 }}
+            variants={{
+              hidden: { opacity: 0, y: 30 },
+              show: { opacity: 1, y: 0 },
+            }}
+            whileHover={{ scale: 1.03, y: -4 }}
+            transition={{ type: "spring", stiffness: 250 }}
               className={`service-card2 cursor-pointer p-[1.7px]
                 ${i >= 3 ? "md:col-span-1 md:translate-x-[50%]" : ""}
               `}
@@ -94,7 +99,7 @@ export default function CoreValuesSection() {
               </div>
             </motion.div>
           ))}
-        </div>
+        </motion.div>
          {/* ================= MOBILE VIEW ================= */}
         <div className="md:hidden">
           <div
