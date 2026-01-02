@@ -36,7 +36,7 @@ export default function MissionVisionSection() {
 
 
   return (
-    <section className="w-full py-12 px-6 lg:px-28">
+    <section className="w-full py-12 md:py-20 px-6 lg:px-28">
       <div className="hidden  mx-auto md:grid grid-cols-1 md:grid-cols-2 gap-8">
         {missionVision.map((item, i) => (
           <motion.div

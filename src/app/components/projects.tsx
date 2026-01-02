@@ -65,7 +65,7 @@ const handleScroll = () => {
           Our Latest Projects
         </h1>
 
-        <p className="text-[#525252] max-w-2xl mx-auto leading-relaxed font-inter-medium text-[14px] md:text-[16px] lg:text-[20px] mb-6 md:mb-14">
+        <p className="text-[#525252] max-w-2xl mx-auto leading-relaxed font-inter-medium text-[14px] md:text-[16px] lg:text-[20px] mb-6 md:mb-12">
           Here are some of the latest projects we have worked on.
         </p>
       </motion.div>
