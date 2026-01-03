@@ -53,7 +53,7 @@ export default function StatsSection() {
                 {stat.suffix}
               </h3>
 
-              <p className="mt-4 text-[16px] md:text-[24px] lg:text-[32px] tracking-widest uppercase text-gray-300">
+              <p className="mt-4 text-[16px] md:text-[20px] lg:text-[32px] tracking-widest uppercase text-gray-300">
                 {stat.label.split(" ").map((word, i) => (
                   <span key={i}>
                     {word}

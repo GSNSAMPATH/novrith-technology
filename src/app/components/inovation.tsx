@@ -78,7 +78,7 @@ export default function PoweredByInnovation() {
         </div>
 
         {/* RIGHT CONTENT */}
-        <div className="w-full lg:w-3/5 relative h-[280px]  lg:h-[800px] xl:h-[700px]">
+        <div className="w-full lg:w-3/5 relative h-[300px] sm:h-[380px]  lg:h-[800px] xl:h-[700px]">
           <div className="flex lg:flex-row flex-col  gap-4 lg:gap-10 h-full">
             {/* Column 1 */}
             <div className="relative overflow-hidden w-full">
