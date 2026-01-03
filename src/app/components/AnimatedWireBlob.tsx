@@ -23,11 +23,11 @@ export default function AnimatedImage() {
         }}
       >
         <Image
-          src="/icons8-settings-10802.png"
+          src="/icons8-settings-512.png"
           alt="Glowing shape"
           width={400}
           height={400}
-          className="select-none pointer-events-none h-[300px] w-[300px]"
+          className="select-none pointer-events-none h-[300px] w-[300px] md:h-[350px] md:w-[350px]"
         />
       </motion.div>
     </div>
