@@ -10,8 +10,9 @@ export default function AnimatedImage() {
         animate={{
           rotate: [0, 360], // full 360° rotation
           scale: [1, 1.05, 1], // gentle breathing
+          opacity: [1, 1, 1],
           filter: [
-            "drop-shadow(0 0 15px #00ff88)",
+            "drop-shadow(0 0 15px #00ff88ff)",
             "drop-shadow(0 0 40px #00ff88)",
             "drop-shadow(0 0 15px #00ff88)",
           ],

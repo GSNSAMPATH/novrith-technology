@@ -35,10 +35,10 @@ export default function CaseStudies() {
           className="service-card2 cursor-pointer p-[2.7px]"
         >
           <div className="service-card">
-            <div className="c grid md:grid-cols-2 gap-10 p-6 md:p-10 items-center">
+            <div className="flex flex-row md:grid md:grid-cols-2 gap-4 md:gap-10 p-4 md:p-10 items-center">
 
               {/* Image */}
-              <div className="relative w-full h-[220px] md:h-[260px] rounded-lg overflow-hidden">
+              <div className="relative w-[200px] md:w-full h-[120px] md:h-[220px] lg:h-[280px] xl:h-[360px] rounded-lg overflow-hidden">
                 <Image
                   src={item.image}
                   alt={item.title}
@@ -48,20 +48,20 @@ export default function CaseStudies() {
               </div>
 
               {/* Content */}
-              <div className="space-y-4 text-left">
-                <h4 className="text-gray-400 text-sm tracking-widest">
+              <div className=" space-y-1 md:space-y-4 text-left w-full">
+                <h4 className="text-gray-400 text-[12px] md:text-[16px] tracking-widest">
                   {item.title}
                 </h4>
 
-                <h3 className="text-white font-semibold text-lg md:text-xl">
+                <h3 className="text-white font-semibold text-[12px] md:text-[32px]">
                   {item.client}
                 </h3>
 
-                <p className="text-gray-400 text-sm leading-relaxed">
+                <p className="text-gray-400 text-sm leading-relaxed line-clamp-2">
                   {item.description}
                 </p>
 
-                <button className="case-btn">
+                <button className="mt-auto btn-green p-1 px-2 w-fit lg:w-[250px] text-center text-[12px]">
                   VIEW CASE STUDY
                   <ArrowUpRight size={18} />
                 </button>
