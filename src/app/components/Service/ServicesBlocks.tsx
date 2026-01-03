@@ -67,7 +67,7 @@ export default function ServicesBlocks() {
           className={`service-card2 cursor-pointer p-[2.7px]`}
         >
             
-          <div className="service-card flex flex-row md:grid grid-cols-2  md:gap-10 p-2 lg:p-12  items-center">
+          <div className="service-card flex flex-row md:grid grid-cols-2  md:gap-10 p-4 lg:p-12  items-center">
             {/* Illustration */}
             <div className="xl:w-[600px] w-[100px] sm:w-[400px] h-[100px] md:h-[420px] xl:h-[360px]  items-center justify-left  backdrop-blur">
               <Image
