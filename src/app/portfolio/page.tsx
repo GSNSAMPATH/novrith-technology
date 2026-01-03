@@ -1,4 +1,5 @@
 import Navbar from "../components/Navbar"
+import CaseStudies from "../components/Portforlio/CaseStudies"
 import PortfolioInfo from "../components/Portforlio/info"
 
 export default function Portfolio() {
@@ -6,6 +7,7 @@ export default function Portfolio() {
         <>
             <Navbar />
             <PortfolioInfo />
+            <CaseStudies />
         </>
     )
 }
