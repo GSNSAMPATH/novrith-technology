@@ -63,9 +63,9 @@ export default function Newerend() {
                 }}
               >
                 {[
-                  "Founded in Sri Lanka, Novrith Technology represents the fusion of innovation, design, and forward-thinking engineering. We believe in one core idea — the future is not tomorrow; it starts today.",
+                  "Founded in Sri Lanka, Novrith Technology represents the fusion of innovation, design, and forward-thinking engineering. We believe in one core idea that the future is not tomorrow, it starts today.",
                   "Our team of software engineers, designers, and digital strategists",
-                  "Collaborate to create technology that grows with your vision. We don’t just deliver projects — we build long-term digital ecosystems.",
+                  "Collaborate to create technology that grows with your vision. We don’t just deliver projects, we build long-term digital ecosystems.",
                 ].map((text, i) => (
                   <motion.span
                     key={i}

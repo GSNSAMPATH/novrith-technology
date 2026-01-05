@@ -11,6 +11,7 @@ type CaseStudy = {
   client: string;
   description: string;
   image: string;
+  url: string;
 };
 
 export default function CaseStudies() {
@@ -48,22 +49,22 @@ export default function CaseStudies() {
 
               {/* Content */}
               <div className=" space-y-1 md:space-y-4 text-left w-full">
-                <h4 className="text-gray-400 text-[12px] md:text-[16px] tracking-widest">
+                <h4 className="text-gray-400 font-inter-medium text-[14px] md:text-[16px] lg:text-[20px] tracking-widest">
                   {item.title}
                 </h4>
 
-                <h3 className="text-white font-semibold text-[12px] md:text-[32px]">
+                <h3 className="text-white font-inter-medium text-[14px] md:text-[16px] lg:text-[20px]">
                   {item.client}
                 </h3>
 
-                <p className="text-gray-400 text-sm leading-relaxed line-clamp-2 md:line-clamp-10">
+                <p className="text-gray-400 text-sm leading-relaxed line-clamp-2 md:line-clamp-10  font-inter-medium text-[12px] md:text-[14px] lg:text-[16px]">
                   {item.description}
                 </p>
 
-                <button className="mt-auto btn-green p-2 md:p-4 px-2 w-[150px] lg:w-[250px] text-center text-xs md:text-sm">
+                <a href={item.url} className="mt-auto btn-green p-2 md:p-4 px-2 w-[150px] lg:w-[250px] text-center text-xs md:text-sm">
                   VIEW CASE STUDY
                   <ArrowUpRight className="hidden md:inline-block ml-2" />
-                </button>
+                </a>
               </div>
 
             </div>

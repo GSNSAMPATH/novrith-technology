@@ -96,7 +96,7 @@ export default function ContactSection() {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.6, duration: 0.8 }}
         >
-              Drop a message — you never know where one connection could lead.
+              Drop a message and you never know where one connection could lead.
             </motion.p>
 
             <form className="space-y-5">
@@ -115,7 +115,7 @@ export default function ContactSection() {
                 placeholder="Type your message here"
               />
 
-              <button className="mt-6 inline-flex items-center gap-2 bg-green-600 hover:bg-green-500 px-6 py-3 rounded-md font-semibold transition">
+              <button className="btn-green p-2 md:p-4 px-6 w-[200px] md:w-[250px] font-bold font-inter text-[12px] md:text-[16px] flex items-center justify-center gap-2 ">
                 SEND A MESSAGE
                 <ArrowUpRight size={18} />
               </button>

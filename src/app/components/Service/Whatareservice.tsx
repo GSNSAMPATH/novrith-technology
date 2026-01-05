@@ -44,7 +44,7 @@ export default function Whatareservice() {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.6, duration: 0.8 }}
         >
-            From code to creativity, we deliver scalable digital solutions designed to solve real business challenges — with transparent pricing and enterprise-grade quality.
+            From code to creativity, we deliver scalable digital solutions designed to solve real business challenges. Our services are built with transparent pricing and enterprise-grade quality.
       </motion.p>
     </section>
   );

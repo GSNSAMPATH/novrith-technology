@@ -44,6 +44,12 @@ export const caseStudy = defineType({
     }),
 
     defineField({
+      name: "link",
+      title: "Link",
+      type: "url",
+    }),
+
+    defineField({
       name: "order",
       title: "Order",
       type: "number",

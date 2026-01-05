@@ -47,7 +47,7 @@ export default function WhoWeAre() {
         At Novrith Technology, We Are Redefining What It Means To Be A Modern
         Digital Partner. Founded In Sri Lanka, We Specialize In AI-Driven
         Software Development, Web And Mobile App Engineering, IoT Solutions, And
-        Creative Digital Design. We Don’t Just Build Technology — We Build
+        Creative Digital Design. We Don’t Just Build Technology, We Build
         Possibilities. Our Mission Is To Empower Businesses, Startups, And
         Industries Through Intelligent Innovation And User-Centered Design.
       </motion.p>
@@ -59,7 +59,7 @@ export default function WhoWeAre() {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.6, duration: 0.8 }}
         >
-        “We Don’t Follow Trends — We Design The Future.”
+        “ We Don’t Follow Trends, We Design The Future. ”
       </motion.p>
 
       {/* Signature */}
@@ -69,7 +69,7 @@ export default function WhoWeAre() {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.6, duration: 0.8 }}
         >
-        — Novrith Technology Team
+        - Novrith Technology Team
       </motion.p>
     </section>
   );

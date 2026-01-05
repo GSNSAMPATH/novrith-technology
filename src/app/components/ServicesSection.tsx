@@ -87,7 +87,7 @@ export default function ServicesSection() {
           transition: "background 0.2s ease",
         }}
       >
-        From Code to Creativity — We Build What Matters
+        From Code to Creativity We Build What Matters
       </motion.h1>
 
       {/* Subtitle */}
@@ -99,7 +99,7 @@ export default function ServicesSection() {
         className="text-[#888888] font-inter-medium max-w-3xl text-[14px] md:text-[16px] lg:text-[20px] mx-auto leading-relaxed mb-6 md:mb-12"
       >
         Whether It's A Smart Web App, A Cross-Platform Mobile Experience, Or An
-        AI-Powered IoT Solution — Our Expertise Ensures Your Product Is Reliable,
+        AI-Powered IoT Solution, Our Expertise Ensures Your Product Is Reliable,
         Scalable, And Extraordinary.
       </motion.p>
 
