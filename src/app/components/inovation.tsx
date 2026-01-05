@@ -91,14 +91,14 @@ export default function PoweredByInnovation() {
                     w-[90px] h-[90px]
                     sm:w-[140px] sm:h-[140px]
                     lg:w-[180px] lg:h-[180px]
-                    xl:w-full xl:h-[260px]"
+                    xl:w-full xl:h-[220px]"
                   >
                     <Image 
                     src={logo.img} 
                     alt={logo.title} 
                     width={90} 
                     height={90}
-                    className="w-10 md:w-20 lg:w-30 xl:w-40" />
+                    className="w-10 md:w-20 lg:w-30 xl:w-30" />
                   </div>
                 ))}
               </div>
@@ -115,14 +115,14 @@ export default function PoweredByInnovation() {
                     w-[90px] h-[90px]
                     sm:w-[140px] sm:h-[140px]
                     lg:w-[180px] lg:h-[180px]
-                    xl:w-full xl:h-[260px]"
+                    xl:w-full xl:h-[220px]"
                   >
                     <Image 
                     src={logo.img} 
                     alt={logo.title} 
                     width={90} 
                     height={90} 
-                    className="w-10 md:w-20 lg:w-30 xl:w-40"/>
+                    className="w-10 md:w-20 lg:w-30 xl:w-30"/>
                   </div>
                 ))}
               </div>
