@@ -1,11 +1,17 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
+
+type Testimonial = {
+  _id: string;
+  name: string;
+  description: string;
+};
 
 export default function TestimonialsSection() {
-
-      const [pos, setPos] = useState({ x: 50, y: 50 });
+  const [testimonials, setTestimonials] = useState<Testimonial[]>([]);
+  const [pos, setPos] = useState({ x: 50, y: 50 });
     
       const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
         const { left, top, width, height } = e.currentTarget.getBoundingClientRect();
@@ -25,23 +31,11 @@ export default function TestimonialsSection() {
   };
 
 
-  const testimonials = [
-    {
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
-      name: "John Doe",
-    },
-    {
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
-      name: "John Doe",
-    },
-    {
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
-      name: "John Doe",
-    },
-  ];
+  useEffect(() => {
+    fetch("/api/testimonials")
+      .then((res) => res.json())
+      .then(setTestimonials);
+  }, []);
 
   return (
     <section className="bg-[#15191f] py-12 md:py-20 px-6 lg:px-28"
