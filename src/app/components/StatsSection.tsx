@@ -31,7 +31,7 @@ function AnimatedNumber({ value }: { value: number }) {
 export default function StatsSection() {
   const stats = [
     { value: 5, suffix: "+", label: "Projects Completed" },
-    { value: 5, suffix: "+", label: "Countries Served" },
+    { value: 1, suffix: "+", label: "Countries Served" },
     { value: 1, suffix: "+", label: "Industries Transformed" },
     { value: 98, suffix: "%", label: "Client Retention Rate" },
   ];

@@ -49,10 +49,10 @@ export default function ContactSection() {
               </div>
 
               <div className="space-y-4 text-sm text-gray-300 mb-8">
-              <a href="#" className="flex items-center gap-2"><FaFacebookF className="p-2 h-8 w-8 rounded-full bg-white/30 hover:bg-green-400 hover:text-black" />Facebook</a>
-              <a href="#" className="flex items-center gap-2"><FaXTwitter className="p-2 h-8 w-8 rounded-full bg-white/30 hover:bg-green-400 hover:text-black"/>Twitter</a>
-              <a href="#" className="flex items-center gap-2"><FaLinkedinIn className="p-2 h-8 w-8 rounded-full bg-white/30 hover:bg-green-400 hover:text-black"/>Linkedin</a>
-              <a href="#" className="flex items-center gap-2"><FaInstagram className="p-2 h-8 w-8 rounded-full bg-white/30 hover:bg-green-400 hover:text-black"/>Instagram</a>
+              <a href="https://www.facebook.com/share/1WVRemNaku/" className="flex items-center gap-2"><FaFacebookF className="p-2 h-8 w-8 rounded-full bg-white/30 hover:bg-green-400 hover:text-black" />Facebook</a>
+              <a href="https://x.com/NovrithT97600" className="flex items-center gap-2"><FaXTwitter className="p-2 h-8 w-8 rounded-full bg-white/30 hover:bg-green-400 hover:text-black"/>Twitter</a>
+              <a href="https://www.linkedin.com/company/novrith-technology" className="flex items-center gap-2"><FaLinkedinIn className="p-2 h-8 w-8 rounded-full bg-white/30 hover:bg-green-400 hover:text-black"/>Linkedin</a>
+              <a href="https://www.instagram.com/novrithtechnology/" className="flex items-center gap-2"><FaInstagram className="p-2 h-8 w-8 rounded-full bg-white/30 hover:bg-green-400 hover:text-black"/>Instagram</a>
             </div>
             </div>
 

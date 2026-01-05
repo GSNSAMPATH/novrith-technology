@@ -41,10 +41,12 @@ export default function Footer() {
               <FaWhatsapp className="text-[16px] w-6 h-6"/>
               072 211 9167
             </a>
-            <p className="flex items-center gap-3">
-              <FaEnvelope />
+            <a 
+            href="mailto:novrithtechnology@gmail.com"
+            className="flex items-center gap-3">
+              <FaEnvelope className="w-6 h-6 md:w-5 md:h-5"/>
               novrithtechnology@gmail.com
-            </p>
+            </a>
           </div>
         </div>
 
@@ -104,10 +106,10 @@ export default function Footer() {
         </p>
 
         <div className="flex gap-3">
-          <SocialIcon href="#" icon={<FaFacebookF />} /> 
-          <SocialIcon href="#" icon={<FaXTwitter />} />
-          <SocialIcon href="#" icon={<FaLinkedinIn />} />
-          <SocialIcon href="#" icon={<FaInstagram />} />
+          <SocialIcon href="https://www.facebook.com/share/1WVRemNaku/" icon={<FaFacebookF />} /> 
+          <SocialIcon href="https://x.com/NovrithT97600" icon={<FaXTwitter />} />
+          <SocialIcon href="https://www.linkedin.com/company/novrith-technology" icon={<FaLinkedinIn />} />
+          <SocialIcon href="https://www.instagram.com/novrithtechnology/" icon={<FaInstagram />} />
         </div>
       </div>
     </footer>
