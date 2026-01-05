@@ -179,9 +179,9 @@ const handleScroll = () => {
 
           <a
             href={project.link}
-            className="mt-auto btn-green p-2 w-[180px] text-center text-xs"
+            className="mt-auto btn-green p-2 w-[150px] text-center text-xs"
           >
-            SEE FULL SERVICE RANGE
+             VIEW CASE STUDY
           </a>
         </motion.div>
       </div>

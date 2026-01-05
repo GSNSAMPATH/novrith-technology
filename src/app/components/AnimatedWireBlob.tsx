@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export default function AnimatedImage() {
   return (
-    <div className="flex justify-center items-center h-[400px] bg-transparent">
+    <div className="flex justify-center items-center md:h-[400px] bg-transparent">
       <motion.div
         animate={{
           rotate: [0, 360], // full 360° rotation
@@ -28,7 +28,7 @@ export default function AnimatedImage() {
           alt="Glowing shape"
           width={400}
           height={400}
-          className="select-none pointer-events-none h-[300px] w-[300px] md:h-[350px] md:w-[350px]"
+          className="select-none pointer-events-none  md:h-[350px] md:w-[350px]"
         />
       </motion.div>
     </div>

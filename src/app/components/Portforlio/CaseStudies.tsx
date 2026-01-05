@@ -23,14 +23,13 @@ export default function CaseStudies() {
   }, []);
 
   return (
-    <section className="py-20 space-y-10 px-4 lg:px-20">
+    <section className="py-20 space-y-10 px-6 lg:px-28">
       {data.map((item, i) => (
         <motion.div
           key={i}
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: i * 0.1 }}
           whileHover={{ scale: 1.01 }}
           className="service-card2 cursor-pointer p-[2.7px]"
         >
@@ -38,7 +37,7 @@ export default function CaseStudies() {
             <div className="flex flex-row md:grid md:grid-cols-2 gap-4 md:gap-10 p-4 md:p-10 items-center">
 
               {/* Image */}
-              <div className="relative w-[200px] md:w-full h-[120px] md:h-[220px] lg:h-[280px] xl:h-[360px] rounded-lg overflow-hidden">
+              <div className="relative w-[200px] md:w-full h-[120px] md:h-[220px] lg:h-[280px] xl:h-[340px] rounded-lg overflow-hidden">
                 <Image
                   src={item.image}
                   alt={item.title}
@@ -57,13 +56,13 @@ export default function CaseStudies() {
                   {item.client}
                 </h3>
 
-                <p className="text-gray-400 text-sm leading-relaxed line-clamp-2">
+                <p className="text-gray-400 text-sm leading-relaxed line-clamp-2 md:line-clamp-10">
                   {item.description}
                 </p>
 
-                <button className="mt-auto btn-green p-1 px-2 w-fit lg:w-[250px] text-center text-[12px]">
+                <button className="mt-auto btn-green p-2 md:p-4 px-2 w-[150px] lg:w-[250px] text-center text-xs md:text-sm">
                   VIEW CASE STUDY
-                  <ArrowUpRight size={18} />
+                  <ArrowUpRight className="hidden md:inline-block ml-2" />
                 </button>
               </div>
 
