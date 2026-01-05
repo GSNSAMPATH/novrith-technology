@@ -83,9 +83,13 @@ export default function Team() {
         {team.map((member, index) => (
           <motion.div
             key={index}
-            variants={{
-              hidden: { opacity: 0, y: 40 },
-              show: { opacity: 1, y: 0 },
+
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+            transition={{
+              duration: 0.4,
+              ease: "easeOut",
             }}
             whileHover={{ scale: 1.02 }}
             className="relative rounded-xl overflow-hidden p-6 flex flex-col text-white "
@@ -96,7 +100,7 @@ export default function Team() {
               boxShadow: "inset 0 0 0 1px #444",
             }}
           >
-            <span className="text-xs tracking-widest text-gray-400 mb-1">
+            <span className="text-[#525252] mb-2 leading-relaxed font-inter-medium text-[10px] md:text-[12px] lg:text-[14px]">
               {member.role}
             </span>
 
@@ -113,7 +117,7 @@ export default function Team() {
               />
             </div>
 
-            <p className="text-gray-400 text-sm leading-relaxed line-clamp-4">
+            <p className="text-[#525252] leading-relaxed font-inter-medium text-[12px] md:text-[14px] lg:text-[16]">
               {member.description}
             </p>
           </motion.div>

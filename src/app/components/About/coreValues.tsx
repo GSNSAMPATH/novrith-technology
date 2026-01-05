@@ -50,7 +50,7 @@ export default function CoreValuesSection() {
        onMouseMove={handleMouseMove}>
         {/* Title */}
         <motion.h1
-          className="font-zendots tracking-wide text-[20px] md:text-[30px] lg:text-[40px] text-center font-bold leading-tight mb-4 md:mb-12"
+          className="font-zendots tracking-wide text-[20px] md:text-[30px] lg:text-[40px] text-center font-bold leading-tight mb-6 md:mb-12"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3, duration: 0.8 }}

@@ -150,7 +150,9 @@ const handleScroll = () => {
       >
         <motion.div
           whileHover={{ scale: 1.03 }}
-          transition={{ stiffness: 200 }}
+          whileTap={{ scale: 0.95 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ stiffness: 100 }}
           className="relative rounded-xl overflow-hidden p-4 flex flex-col text-white"
           style={{
             backgroundColor: "#030419",

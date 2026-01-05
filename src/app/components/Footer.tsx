@@ -10,6 +10,7 @@ import {
   FaMapMarkerAlt,
   FaEnvelope,
 } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 export default function Footer() {
   return (
@@ -28,11 +29,11 @@ export default function Footer() {
             />
           </div>
 
-          <p className="text-gray-300 mb-4 md:mb-6 font-normal font-inter text-[12px] md:text-[16px]">
+          <p className="text-gray-300 mb-4 md:mb-6 font-normal font-inter text-[14px] md:text-[16px]">
             Your Vision. Our <br /> Technology.
           </p>
 
-          <div className=" space-y-2 md:space-y-3 text-gray-300 font-normal font-inter text-[12px] md:text-[16px]">
+          <div className=" space-y-2 md:space-y-3 text-gray-300 font-normal font-inter text-[14px] md:text-[16px]">
             <p className="flex items-center gap-3">
               <FaMapMarkerAlt />
               Colombo, Sri Lanka
@@ -47,20 +48,20 @@ export default function Footer() {
         {/* Company Column 1 */}
         <div>
           <h3 className="text-xl font-semibold mb-6">Company</h3>
-          <ul className="space-y-2 md:space-y-4 text-gray-300 font-normal font-inter text-[12px] md:text-[16px]">
+          <ul className="space-y-2 md:space-y-4 text-gray-300 font-normal font-inter text-[14px] md:text-[16px]">
+            <li>
+              <Link href="/" className="hover:text-white transition">
+                Home
+              </Link>
+            </li>
             <li>
               <Link href="/about" className="hover:text-white transition">
-                About Us
+                About
               </Link>
             </li>
             <li>
-              <Link href="/contact" className="hover:text-white transition">
-                Contact Us
-              </Link>
-            </li>
-            <li>
-              <Link href="/privacy" className="hover:text-white transition">
-                Privacy & Cookie Policy
+              <Link href="/services" className="hover:text-white transition">
+                Services
               </Link>
             </li>
           </ul>
@@ -69,10 +70,10 @@ export default function Footer() {
         {/* Company Column 2 */}
         <div>
           <h3 className="text-xl font-semibold mb-6">Company</h3>
-          <ul className=" space-y-2 md:space-y-4 text-gray-300 font-normal font-inter text-[12px] md:text-[16px]">
+          <ul className=" space-y-2 md:space-y-4 text-gray-300 font-normal font-inter text-[14px] md:text-[16px]">
             <li>
-              <Link href="/about" className="hover:text-white transition">
-                About Us
+              <Link href="/portfolio" className="hover:text-white transition">
+                Portfolio
               </Link>
             </li>
             <li>
@@ -100,8 +101,8 @@ export default function Footer() {
         </p>
 
         <div className="flex gap-3">
-          <SocialIcon href="#" icon={<FaFacebookF />} />
-          <SocialIcon href="#" icon={<FaTwitter />} />
+          <SocialIcon href="#" icon={<FaFacebookF />} /> 
+          <SocialIcon href="#" icon={<FaXTwitter />} />
           <SocialIcon href="#" icon={<FaLinkedinIn />} />
           <SocialIcon href="#" icon={<FaInstagram />} />
         </div>

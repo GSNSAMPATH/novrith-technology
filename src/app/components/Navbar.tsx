@@ -14,7 +14,7 @@ export default function Navbar() {
     { name: "ABOUT US", path: "/about" },
     { name: "SERVICES", path: "/services" },
     { name: "PORTFOLIO", path: "/portfolio" },
-    { name: "Contact", path: "/contact" },
+    { name: "CONTACT", path: "/contact" },
 
   ];
 
@@ -69,12 +69,12 @@ export default function Navbar() {
 
       {/* Mobile Menu Dropdown */}
       {menuOpen && (
-        <div className="absolute top-14 left-0 w-full bg-black flex flex-col items-center space-y-4 py-4 md:hidden">
+        <div className="absolute top-14 left-0 w-full bg-[#030419] shadow-sm flex flex-col items-center text-left space-y-4 py-6 md:hidden">
           {navItems.map((item) => (
             <Link
               key={item.name}
               href={item.path}
-              className={`text-sm font-semibold ${
+              className={`text-[14px] font-normal   ${
                 pathname === item.path
                   ? "text-[#00B74A]"
                   : "text-white hover:text-[#00B74A]"
@@ -84,13 +84,6 @@ export default function Navbar() {
               {item.name}
             </Link>
           ))}
-          <Link
-            href="/contact"
-            className="bg-[#00B74A] text-white px-5 py-2 font-semibold rounded-none hover:bg-[#00a13e] transition"
-            onClick={() => setMenuOpen(false)}
-          >
-            CONTACT US
-          </Link>
         </div>
       )}
     </nav>

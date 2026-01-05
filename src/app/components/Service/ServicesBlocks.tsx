@@ -77,7 +77,7 @@ export default function ServicesBlocks() {
                     : "opacity-0"
                 }
                 bg-[radial-gradient(circle_at_64%_53%,rgba(0,255,153,0.45)_1%,transparent_40%)]
-                md:bg-[radial-gradient(circle_at_70%_45%,rgba(0,255,153,0.35)_2%,transparent_28%)]
+                md:bg-[radial-gradient(circle_at_74%_45%,rgba(0,255,153,0.35)_2%,transparent_28%)]
               `}
             />
 
@@ -89,7 +89,7 @@ export default function ServicesBlocks() {
                     : "opacity-0"
                 }
                 bg-[radial-gradient(circle_at_22%_53%,rgba(0,255,153,0.45)_2%,transparent_40%)]
-                md:bg-[radial-gradient(circle_at_29%_45%,rgba(0,255,153,0.35)_1%,transparent_34%)]
+                md:bg-[radial-gradient(circle_at_27%_45%,rgba(0,255,153,0.35)_1%,transparent_34%)]
               `}
             />
 
