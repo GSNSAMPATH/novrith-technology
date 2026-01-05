@@ -127,7 +127,7 @@ const handleScroll = () => {
               whileTap={{ scale: 0.95 }}
               className="mt-auto btn-green p-4 px-2 w-fit lg:w-[250px] text-center text-sm"
             >
-              SEE FULL SERVICE RANGE
+              VIEW CASE STUDY 
             </motion.a>
           </motion.div>
         ))}

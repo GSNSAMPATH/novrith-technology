@@ -11,7 +11,9 @@ type CaseStudy = {
   client: string;
   description: string;
   image: string;
-  url: string;
+  link: string;
+  slug: string;
+  order: number;
 };
 
 export default function CaseStudies() {
@@ -31,14 +33,15 @@ export default function CaseStudies() {
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          whileHover={{ scale: 1.01 }}
+          whileHover={{ scale: 1.01  }}
+          transition={{stiffness: 200 }}
           className="service-card2 cursor-pointer p-[2.7px]"
         >
           <div className="service-card">
             <div className="flex flex-row md:grid md:grid-cols-2 gap-4 md:gap-10 p-4 md:p-10 items-center">
 
               {/* Image */}
-              <div className="relative w-[200px] md:w-full h-[120px] md:h-[220px] lg:h-[280px] xl:h-[340px] rounded-lg overflow-hidden">
+              <div className="relative w-[200px] md:w-full h-[120px] md:h-[220px] lg:h-[280px] xl:h-[300px] rounded-lg overflow-hidden">
                 <Image
                   src={item.image}
                   alt={item.title}
@@ -61,7 +64,7 @@ export default function CaseStudies() {
                   {item.description}
                 </p>
 
-                <a href={item.url} className="mt-auto btn-green p-2 md:p-4 px-2 w-[150px] lg:w-[250px] text-center text-xs md:text-sm">
+                <a href={item.link} className="mt-auto btn-green p-2 md:p-4 px-2 w-[150px] lg:w-[250px] text-center text-xs md:text-sm">
                   VIEW CASE STUDY
                   <ArrowUpRight className="hidden md:inline-block ml-2" />
                 </a>

@@ -9,8 +9,9 @@ export async function GET() {
       client,
       description,
       slug,
-      url,
+      link,
       "image": image.asset->url
+
     }
   `;
 

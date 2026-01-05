@@ -193,7 +193,7 @@ export default function ServicesSection() {
         transition={{ delay: 0.4 }}
       >
         <Link
-          href="/contact"
+          href="/services"
           className="inline-flex md:mt-16 btn-green p-2 md:p-4  w-[200px] md:w-[250px] font-bold font-inter text-[12px] md:text-[16px] flex items-center justify-center"
         >
           SEE FULL SERVICE RANGE

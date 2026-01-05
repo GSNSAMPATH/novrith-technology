@@ -9,8 +9,9 @@ import {
   FaInstagram,
   FaMapMarkerAlt,
   FaEnvelope,
+  FaWhatsapp,
 } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
+import { FaW, FaXTwitter } from "react-icons/fa6";
 
 export default function Footer() {
   return (
@@ -34,20 +35,22 @@ export default function Footer() {
           </p>
 
           <div className=" space-y-2 md:space-y-3 text-gray-300 font-normal font-inter text-[14px] md:text-[16px]">
-            <p className="flex items-center gap-3">
-              <FaMapMarkerAlt />
-              Colombo, Sri Lanka
-            </p>
+            <a 
+            href="https://wa.me/0722119167"
+            className="flex items-center gap-3">
+              <FaWhatsapp className="text-[16px] w-6 h-6"/>
+              072 211 9167
+            </a>
             <p className="flex items-center gap-3">
               <FaEnvelope />
-              Info@Novrithtech.Com
+              novrithtechnology@gmail.com
             </p>
           </div>
         </div>
 
         {/* Company Column 1 */}
         <div>
-          <h3 className="text-xl font-semibold mb-6">Company</h3>
+          <h3 className="text-xl font-semibold mb-6">Who </h3>
           <ul className="space-y-2 md:space-y-4 text-gray-300 font-normal font-inter text-[14px] md:text-[16px]">
             <li>
               <Link href="/" className="hover:text-white transition">
@@ -69,7 +72,7 @@ export default function Footer() {
 
         {/* Company Column 2 */}
         <div>
-          <h3 className="text-xl font-semibold mb-6">Company</h3>
+          <h3 className="text-xl font-semibold mb-6">How </h3>
           <ul className=" space-y-2 md:space-y-4 text-gray-300 font-normal font-inter text-[14px] md:text-[16px]">
             <li>
               <Link href="/portfolio" className="hover:text-white transition">

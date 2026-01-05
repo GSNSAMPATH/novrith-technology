@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { FaArrowRight } from "react-icons/fa";
+
 
 export default function HeroSection() {
   const [pos, setPos] = useState({ x: 50, y: 50 });
@@ -13,6 +13,13 @@ export default function HeroSection() {
     const y = ((e.clientY - top) / height) * 100;
     setPos({ x, y });
   };
+
+  const openWhatsApp = (phone: string, message?: string) => {
+  const url = `https://wa.me/${phone.replace(/\+/g, "")}${
+    message ? `?text=${encodeURIComponent(message)}` : ""
+  }`;
+  window.open(url, "_blank", "noopener,noreferrer");
+};
 
   return (
     <section
@@ -94,11 +101,13 @@ export default function HeroSection() {
             // whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.97 }}
             className="btn-green p-2 md:p-4 px-6 w-[200px] md:w-[250px] font-bold font-inter text-[12px] md:text-[16px] flex items-center justify-center gap-2"
+              onClick={() => openWhatsApp("+94722119167", "Hello! I’d like to know more about your services.")}
           >
             START YOUR PROJECT
           </motion.button>
 
-          <motion.button
+          <motion.a
+            href="/about"
             variants={{
               hidden: { opacity: 0, y: 20 },
               show: { opacity: 1, y: 0 },
@@ -106,11 +115,12 @@ export default function HeroSection() {
             // whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.97 }}
             className="btn-green p-0.5 md:w-[250px] "
+          
           >
             <div className="btn-green2 p-2 md:p-4 px-6 w-[200px] md:w-[250px] font-inter text-[12px] md:text-[16px] flex items-center justify-center">
               WATCH OUR STORY
             </div>
-          </motion.button>
+          </motion.a>
         </motion.div>
       </motion.div>
     </section>
