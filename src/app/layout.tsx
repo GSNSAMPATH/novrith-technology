@@ -28,8 +28,91 @@ const  zenDots = Zen_Dots({
 });
 
 export const metadata: Metadata = {
-  title: "Novrith Technology",
-  description: "Novrith Technology - Your Partner in Innovation",
+  title: {
+    default: "Novrith Technology | Web, Mobile, AI & Software Solutions in Sri Lanka",
+    template: "%s | Novrith Technology",
+  },
+
+  description:
+    "Novrith Technology is a leading Sri Lanka–based software company specializing in web development, mobile applications, AI-powered systems, IoT solutions, and custom business software for startups and enterprises.",
+
+  keywords: [
+    "Novrith Technology",
+    "Software company in Sri Lanka",
+    "Web development company Sri Lanka",
+    "Mobile app development Sri Lanka",
+    "AI solutions Sri Lanka",
+    "IoT systems Sri Lanka",
+    "Custom software development",
+    "Business automation software",
+    "Enterprise software solutions",
+    "Startup software development",
+    "Sumal Nadeera",
+  ],
+
+  authors: [{ name: "Novrith Technology", url: "https://www.novrithtech.com" }],
+  creator: "Novrith Technology",
+  publisher: "Novrith Technology",
+
+  icons: {
+    icon: [
+      { url: "/favicon.ico" },
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+    ],
+    apple: "/apple-touch-icon.png",
+    other: [
+      {
+        rel: "manifest",
+        url: "/site.webmanifest",
+      },
+    ],
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
+
+  alternates: {
+    canonical: "https://www.novrithtech.com",
+  },
+
+  openGraph: {
+    type: "website",
+    locale: "en_LK",
+    url: "https://www.novrithtech.com",
+    siteName: "Novrith Technology",
+    title: "Novrith Technology | Smart Software Solutions Sri Lanka",
+    description:
+      "We engineer modern web platforms, mobile apps, AI-driven systems, and advanced software solutions that help businesses grow smarter and faster.",
+    images: [
+      {
+        url: "android-chrome-512x512.png",
+        width: 1200,
+        height: 630,
+        alt: "Novrith Technology – Software & AI Solutions Sri Lanka",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Novrith Technology | Web, Mobile & AI Software Solutions",
+    description:
+      "Future-ready web, mobile, AI, IoT, and custom software solutions built by Novrith Technology in Sri Lanka.",
+    images: ["android-chrome-512x512.png"],
+    creator: "@NovrithTech",
+  },
+
+  category: "Technology",
 };
 
 export default function RootLayout({
