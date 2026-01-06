@@ -16,7 +16,7 @@ export default function Newerend() {
 
   return (
     <section
-      className="text-white flex items-center overflow-hidden relative px-6 lg:px-28 pb-10 md:py-20"
+      className="text-white flex items-center overflow-hidden relative px-6 xl:px-28 pb-10 md:py-20"
       onMouseMove={handleMouseMove}
     >
       <motion.div
@@ -88,7 +88,7 @@ export default function Newerend() {
 
           {/* RIGHT: Image */}
           <motion.div
-            className="md:col-span-5 lg:col-span-4 xl:col-span-3 flex justify-center md:justify-end items-center absolute inset-0 top-8 w-full md:static order-2 h-[340px] "
+            className="md:col-span-5 lg:col-span-4 xl:col-span-3 flex justify-center md:justify-end items-center absolute inset-0 top-8 w-full md:static order-2 h-[340px] md:h-[400px]"
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.4, duration: 0.8 }}

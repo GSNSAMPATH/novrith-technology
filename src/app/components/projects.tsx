@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
+import { ArrowUpRight } from "lucide-react";
 
 type Project = {
   _id: string;
@@ -41,7 +42,7 @@ const handleScroll = () => {
 
   return (
     <section
-      className="bg-[#e5e5e5] py-12 md:py-20 px-6 lg:px-28 overflow-hidden"
+      className="bg-[#e5e5e5] py-12 md:py-20 px-6 xl:px-28 overflow-hidden"
       onMouseMove={handleMouseMove}
     >
       {/* 🔹 Header */}
@@ -113,10 +114,10 @@ const handleScroll = () => {
             </motion.div>
 
             {/* Text */}
-            <h3 className="font-inter-medium text-[14px] md:text-[16px] lg:text-[20px] font-semibold mb-2 md:mb-6">
+            <h3 className="font-inter-medium text-[14px] md:text-[16px] lg:text-[20px] font-semibold mb-2 md:mb-4">
               {projects.title}
             </h3>
-            <p className="text-gray-500 font-inter-medium text-[12px] md:text-[14px] lg:text-[16px] mb-6 line-clamp-2 xl:line-clamp-5">
+            <p className="text-gray-500 font-inter-medium text-[12px] md:text-[14px] lg:text-[16px] mb-4 line-clamp-2 xl:line-clamp-6">
               {projects.description}
             </p>
 
@@ -125,9 +126,10 @@ const handleScroll = () => {
               href={projects.link}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="mt-auto btn-green p-4 px-2 w-fit lg:w-[250px] text-center text-sm"
+              className="mt-auto btn-green p-4 px-2 w-fit lg:w-[250px] text-center font-bold font-inter text-[12px] md:text-[16px] justify-center"
             >
               VIEW CASE STUDY 
+              <ArrowUpRight className="hidden md:inline-block ml-2" />
             </motion.a>
           </motion.div>
         ))}

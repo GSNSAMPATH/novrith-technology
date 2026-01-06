@@ -23,7 +23,7 @@ export default function HeroSection() {
 
   return (
     <section
-      className="relative flex flex-col justify-center items-center text-center text-white min-h-screen overflow-hidden px-6 lg:px-28"
+      className="relative flex flex-col justify-center items-center text-center text-white min-h-screen overflow-hidden px-6  xl:px-28"
       onMouseMove={handleMouseMove}
     >
       {/* 🔹 Background Video */}

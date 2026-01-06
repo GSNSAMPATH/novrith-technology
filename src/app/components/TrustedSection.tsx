@@ -26,7 +26,7 @@ export default function TrustedSection() {
   };
       
   return (
-    <section className="bg-[#e5e5e5] md:py-20 py-12 px-6 w-full px-6 lg:px-28 justify-center items-center"
+    <section className="bg-[#e5e5e5] md:py-20 py-12 px-6 w-full px-6 xl:px-28 justify-center items-center"
     onMouseMove={handleMouseMove}>
         
       <div className="mx-auto  text-center">

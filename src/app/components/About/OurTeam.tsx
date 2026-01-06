@@ -42,7 +42,7 @@ export default function Team() {
 
   return (
     <section
-      className="bg-[#e5e5e5] py-12 md:py-20 px-6 lg:px-28 overflow-hidden"
+      className="bg-[#e5e5e5] py-12 md:py-20 px-6 xl:px-28 overflow-hidden"
       onMouseMove={handleMouseMove}
     >
       {/* 🔹 Header */}
@@ -108,7 +108,7 @@ export default function Team() {
               {member.name}
             </h3>
 
-            <div className="relative w-full h-[340px] mb-4 rounded-lg overflow-hidden">
+            <div className="relative w-full h-[280px] mb-4 rounded-lg overflow-hidden">
               <Image
                 src={member.image}
                 alt={member.name}
@@ -151,12 +151,12 @@ export default function Team() {
                   {member.name}
                 </h3>
 
-                <div className="relative w-full h-[180px] mb-4 rounded-lg overflow-hidden">
+                <div className="relative w-full h-[180px] sm:h-[320px] mb-4 rounded-lg overflow-hidden">
                   <Image
                     src={member.image}
                     alt={member.name}
                     fill
-                    className="object-cover"
+                    className="object-top object-cover"
                   />
                 </div>
 

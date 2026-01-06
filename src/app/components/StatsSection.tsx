@@ -38,7 +38,7 @@ export default function StatsSection() {
 
   return (
     <section className="py-12 md:py-20 ">
-      <div className="px-6 lg:px-28">
+      <div className="px-6 xl:px-28">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-12 text-center text-white">
           {stats.map((stat, i) => (
             <motion.div

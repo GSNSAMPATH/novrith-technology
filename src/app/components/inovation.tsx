@@ -31,7 +31,7 @@ export default function PoweredByInnovation() {
   return (
     <section
       onMouseMove={handleMouseMove}
-      className="w-full text-white py-1 md:py-20 px-6 lg:px-28"
+      className="w-full text-white py-1 md:py-20 px-6 xl:px-28"
     >
       <motion.div
         className="flex flex-col lg:flex-row w-full gap-14"

@@ -45,7 +45,7 @@ export default function CoreValuesSection() {
   };
       
   return (
-    <section className="w-full py-12 md:py-20 px-6 lg:px-28 bg-[#15191F]">
+    <section className="w-full py-12 md:py-20 px-6 xl:px-28 bg-[#15191F]">
       <div className="mx-auto"
        onMouseMove={handleMouseMove}>
         {/* Title */}

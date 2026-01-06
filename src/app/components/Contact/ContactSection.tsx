@@ -19,7 +19,7 @@ export default function ContactSection() {
         };
 
   return (
-    <section className="py-24 px-6 lg:px-28">
+    <section className="py-24 px-6 xl:px-28">
       <div className="grid md:grid-cols-2 gap-6 mx-auto">
 
         {/* LEFT PANEL */}
@@ -32,7 +32,7 @@ export default function ContactSection() {
         whileInView="show"
         viewport={{ once: true }}
         transition={{ duration: 0.9, ease: "easeOut" }}
-        className="service-card6 p-[2.7px] order-2 md:order-1"
+        className="service-card6 p-[2.7px] lg:p-[4px] order-2 md:order-1"
         >
           <div className="service-card5 flex flex-col justify-between h-full text-white p-6 lg:p-10">
             
@@ -71,7 +71,7 @@ export default function ContactSection() {
         whileInView="show"
         viewport={{ once: true }}
         transition={{ duration: 0.9, ease: "easeOut" }}
-        className="service-card4 p-[2.7px] order-1 md:order-2">
+        className="service-card4 p-[2.7px] lg:p-[4px] order-1 md:order-2">
           <div className="service-card3 flex flex-col justify-between h-full p-6 lg:p-10 text-white"
           onMouseMove={handleMouseMove}>
             

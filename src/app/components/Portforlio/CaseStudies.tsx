@@ -26,7 +26,7 @@ export default function CaseStudies() {
   }, []);
 
   return (
-    <section className="py-20 space-y-10 px-6 lg:px-28">
+    <section className="py-20 space-y-10 px-6 xl:px-28">
       {data.map((item, i) => (
         <motion.div
           key={i}
@@ -64,7 +64,7 @@ export default function CaseStudies() {
                   {item.description}
                 </p>
 
-                <a href={item.link} className="mt-auto btn-green p-2 md:p-4 px-2 w-[150px] lg:w-[250px] text-center text-xs md:text-sm">
+                <a href={item.link} className="mt-auto btn-green p-2 md:p-4 px-2 w-[150px] lg:w-[250px] text-center font-bold font-inter text-[12px] md:text-[16px] md:justify-center">
                   VIEW CASE STUDY
                   <ArrowUpRight className="hidden md:inline-block ml-2" />
                 </a>

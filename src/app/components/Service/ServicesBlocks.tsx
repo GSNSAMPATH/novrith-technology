@@ -22,7 +22,7 @@ const services = [
   },
   {
     title: "ADVANCED SYSTEMS (ERP, PMS, CUSTOM)",
-    desc: "We Engineer Complex Business Systems — PMS, ERP, CRM, HRM — Tailored To Your Workflow And Scalability Goals.",
+    desc: "We Engineer Complex Business Systems Like PMS, ERP, CRM, HRMS, And More. Tailored To Your Workflow And Scalability Goals.",
     icon: Settings,
     image:
       "https://res.cloudinary.com/dpjmcup95/image/upload/v1767344719/Frame_7_4_dcye9c.png",
@@ -54,7 +54,7 @@ export default function ServicesBlocks() {
     hovered !== null ? hovered === index : activeIndex === index;
 
   return (
-    <section className="py-20 px-4 md:px-6 lg:px-28 space-y-10">
+    <section className="py-20 px-4 md:px-6 xl:px-28 space-y-10">
       {services.map((service, i) => (
         <motion.div
           key={i}
@@ -94,7 +94,7 @@ export default function ServicesBlocks() {
             />
 
             {/* ===== IMAGE ===== */}
-            <div className="relative z-10 xl:w-[600px] w-[120px] sm:w-[400px] h-[120px] md:h-[420px] xl:h-[360px]">
+            <div className="relative z-10 xl:w-[600px] w-[140px] sm:w-[400px] h-[140px] md:h-[420px] xl:h-[360px]">
               <Image
                 src={service.image}
                 alt={service.title}
@@ -105,7 +105,7 @@ export default function ServicesBlocks() {
 
             {/* ===== TEXT ===== */}
             <div
-              className="relative z-10 text-center space-y-4 w-full md:p-12"
+              className="relative z-10 text-center space-y-2 md:space-y-4 w-full md:p-12"
               onMouseMove={handleMouseMove}
             >
               <div className="inline-flex items-center justify-center p-2 md:w-20 md:h-20 rounded-xl bg-white/10 backdrop-blur">
@@ -119,7 +119,7 @@ export default function ServicesBlocks() {
               </div>
 
               <h3
-                className="font-zendots tracking-wide text-[12px] md:text-2xl transition-all duration-300"
+                className="font-zendots tracking-wide text-[14px] md:text-[16px] lg:text-[20px] transition-all duration-300"
                 style={
                   isActive(i)
                     ? {
@@ -133,7 +133,7 @@ export default function ServicesBlocks() {
                 {service.title}
               </h3>
 
-              <p className="text-gray-400 text-[8px] md:text-base leading-relaxed">
+              <p className="text-gray-400 text-[10px]  md:text-[16px] leading-relaxed">
                 {service.desc}
               </p>
             </div>

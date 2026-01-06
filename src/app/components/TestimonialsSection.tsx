@@ -38,7 +38,7 @@ export default function TestimonialsSection() {
   }, []);
 
   return (
-    <section className="bg-[#15191f] py-12 md:py-20 px-6 lg:px-28"
+    <section className="bg-[#15191f] py-12 md:py-20 px-6 xl:px-28"
              onMouseMove={handleMouseMove}>
       <div className="mx-auto">
 

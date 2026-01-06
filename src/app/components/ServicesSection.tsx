@@ -69,7 +69,7 @@ export default function ServicesSection() {
 
   return (
     <section
-      className="bg-[#15191f] text-white py-12 md:py-32 px-6 lg:px-28 text-center mt-16 overflow-hidden"
+      className="bg-[#15191f] text-white py-12 md:py-32 px-6 xl:px-28 text-center mt-16 overflow-hidden"
       onMouseMove={handleMouseMove}
     >
       {/* Heading */}

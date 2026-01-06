@@ -15,7 +15,7 @@ import { FaW, FaXTwitter } from "react-icons/fa6";
 
 export default function Footer() {
   return (
-    <footer className="text-white px-6 lg:px-28 pt-20 pb-6">
+    <footer className="text-white px-6 xl:px-28 pt-20 pb-6">
       {/* Top Section */}
       <div className="grid grid-cols-1 md:grid-cols-3  gap-6 md:gap-14">
         {/* Brand */}
@@ -44,7 +44,7 @@ export default function Footer() {
             <a 
             href="mailto:novrithtechnology@gmail.com"
             className="flex items-center gap-3">
-              <FaEnvelope className="w-6 h-6 md:w-5 md:h-5"/>
+              <FaEnvelope className="w-5 h-5 md:w-5 md:h-5"/>
               novrithtechnology@gmail.com
             </a>
           </div>

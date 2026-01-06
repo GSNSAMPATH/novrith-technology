@@ -6,13 +6,13 @@ import { useRef, useState } from "react";
 const missionVision = [
     {
         title: "Our Mission",
-        content: "At Novrith Technology, our mission is to engineer a smarter, more connected world by  creating intelligent, scalable, and sustainable digital ecosystems that empower businesses and  elevate human experiences.  We believe that technology should do more than solve problems — it should inspire progress,  simplify life, and build lasting impact.  Through the seamless integration of creativity, logic, and intelligence, we develop solutions  that adapt and evolve as the world changes.  From startups taking their first step into digital transformation to enterprises seeking next-level  innovation, we stand as their strategic technology partner, ensuring every product we build  contributes to a more efficient, data-driven, and sustainable future.",
-        content2: "Our mission is to transform innovation into purpose by building technology that grows with  you, not past you."
+        content: "At Novrith Technology, our mission is to build intelligent, scalable, and sustainable digital solutions that help businesses grow and people work smarter. We combine creativity, engineering, and intelligent systems to create technology that adapts, evolves, and delivers real impact. From startups to enterprises, we partner with our clients to design solutions that are efficient, future-ready, and built to last.",
+
       },
     {
         title: "Our VISION",
-        content: "Recognized as a technology powerhouse known for merging design, intelligence, and purpose into every solution we deliver. We envision a future where technology is not just advanced — but accessible, ethical, and meaningful. A future where every innovation carries a human touch and every idea has the power to make life better.",
-        content2: "“At Novrith, the future isn’t something we wait for  it’s something we design, today.”"
+        content: "Our vision is to become a trusted global technology brand known for merging design, intelligence, and purpose. We aim to create technology that is not only advanced, but also accessible, ethical, and meaningful. We are committed to shaping a future where innovation improves lives and empowers ideas.",
+        content2: "“At Novrith Technology, we don’t wait for the future: we design it.”"
     }
 ]
 export default function MissionVisionSection() {
@@ -36,7 +36,7 @@ export default function MissionVisionSection() {
 
 
   return (
-    <section className="w-full py-12 md:py-20 px-6 lg:px-28">
+    <section className="w-full py-12 md:py-20 px-6 xl:px-28">
       <div className="hidden  mx-auto md:grid grid-cols-1 md:grid-cols-2 gap-8">
         {missionVision.map((item, i) => (
           <motion.div

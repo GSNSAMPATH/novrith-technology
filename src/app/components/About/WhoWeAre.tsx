@@ -17,7 +17,7 @@ export default function WhoWeAre() {
 
   return (
     <section
-      className="relative w-full bg-[#15191F] px-6 md:px-16 lg:px-32 py-12 md:py-32 mt-17 md:mt-20 text-center"
+      className="relative w-full bg-[#15191F] px-6 xl:px-28 py-12 md:py-32 mt-17 md:mt-20 text-center"
       onMouseMove={handleMouseMove}
     >
       {/* Title */}
