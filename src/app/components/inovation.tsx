@@ -71,7 +71,7 @@ export default function PoweredByInnovation() {
               Engineered for the Future.
             </motion.h1>
 
-            <motion.p className="text-[#888] leading-relaxed max-w-xl font-inter-medium text-[14px] md:text-[16px] lg:text-[20px]">
+            <motion.p className="text-[#9C9C9C] leading-relaxed max-w-xl font-inter-medium text-[14px] md:text-[16px] lg:text-[20px]">
               We use cutting-edge frameworks and cloud-native systems to ensure your products perform  seamlessly, scale infinitely, and evolve with your needs.
             </motion.p>
           </div>

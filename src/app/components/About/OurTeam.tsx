@@ -100,7 +100,7 @@ export default function Team() {
               boxShadow: "inset 0 0 0 1px #444",
             }}
           >
-            <span className="text-[#525252] mb-2 leading-relaxed font-inter-medium text-[10px] md:text-[12px] lg:text-[14px]">
+            <span className="text-[#9C9C9C] mb-2 leading-relaxed font-inter-medium text-[10px] md:text-[12px] lg:text-[14px]">
               {member.role}
             </span>
 
@@ -117,7 +117,7 @@ export default function Team() {
               />
             </div>
 
-            <p className="text-[#525252] leading-relaxed font-inter-medium text-[12px] md:text-[14px] lg:text-[16]">
+            <p className="text-[#9C9C9C] leading-relaxed font-inter-medium text-[12px] md:text-[14px] lg:text-[16]">
               {member.description}
             </p>
           </motion.div>

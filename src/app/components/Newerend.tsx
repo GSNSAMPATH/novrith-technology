@@ -51,7 +51,7 @@ export default function Newerend() {
 
               {/* Description */}
               <motion.p
-                className="text-[#888888] font-inter-medium text-[14px] md:text-[16px] lg:text-[20px] leading-relaxed mb-6 md:mb-10"
+                className="text-[#9C9C9C] font-inter-medium text-[14px] md:text-[16px] lg:text-[20px] leading-relaxed mb-6 md:mb-10"
                 initial="hidden"
                 whileInView="show"
                 viewport={{ once: true }}

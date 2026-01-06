@@ -96,7 +96,7 @@ export default function ServicesSection() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ delay: 0.2, duration: 0.7 }}
-        className="text-[#888888] font-inter-medium max-w-3xl text-[14px] md:text-[16px] lg:text-[20px] mx-auto leading-relaxed mb-6 md:mb-12"
+        className="text-[#9C9C9C] font-inter-medium max-w-3xl text-[14px] md:text-[16px] lg:text-[20px] mx-auto leading-relaxed mb-6 md:mb-12"
       >
         Whether It's A Smart Web App, A Cross-Platform Mobile Experience, Or An
         AI-Powered IoT Solution, Our Expertise Ensures Your Product Is Reliable,
@@ -125,7 +125,7 @@ export default function ServicesSection() {
             <div className="text-green-400 text-3xl mb-4">
               {service.icon}
             </div>
-            <h3 className="text-sm font-semibold mb-2">
+            <h3 className="text-sm  font-semibold mb-2">
               {service.title}
             </h3>
             <p className="text-xs text-[#9aa0a6] leading-relaxed  line-clamp-2">
@@ -175,7 +175,7 @@ export default function ServicesSection() {
             className="service-card2 cursor-pointer p-[1.7px]"
           >
             <div className="service-card p-6 text-left h-[100%]">
-              <div className="mb-4">{service.icon}</div>
+              <div className="mb-4 text-green-400">{service.icon}</div>
               <h3 className="text-lg font-semibold mb-2 font-inter-medium text-[14px] md:text-[16px] lg:text-[20px]">{service.title}</h3>
               <p className="text-white font-inter-medium text-[12px] md:text-[14px] lg:text-[16px] leading-relaxed">
                 {service.desc}
