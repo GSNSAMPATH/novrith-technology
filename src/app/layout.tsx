@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Inter, Zen_Dots } from "next/font/google";
 import "./globals.css";
 import Footer from "./components/Footer";
+import Script from "next/script";
 
 
 const inter = Inter({
@@ -110,7 +111,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-
+      <Script
+          strategy="afterInteractive"
+          src="https://app.termly.io/embed.min.js"
+          data-auto-block="off"
+          data-website-uuid="8a39bac7-3b53-40c8-94b6-77ac91f26463"
+        />
       <body
         className={`${geistSans.variable} ${inter.variable} ${geistMono.variable} ${zenDots.variable} antialiased`}
       >
