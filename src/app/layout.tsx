@@ -121,8 +121,9 @@ export default function RootLayout({
         className={`${geistSans.variable} ${inter.variable} ${geistMono.variable} ${zenDots.variable} antialiased`}
       >
         {children}
+        <Footer />
       </body>
-      <Footer />
+    
       
     </html>
   );
