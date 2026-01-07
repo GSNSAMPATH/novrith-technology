@@ -1,28 +1,21 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: "https://www.novrithtech.com",
-  generateRobotsTxt: true, // generates robots.txt
+  siteUrl: "https://novrithtechnology.com",
+  generateRobotsTxt: true,
   sitemapSize: 7000,
-  changefreq: "weekly",
-  priority: 0.7,
-
-  exclude: ["/admin", "/dashboard"],
-
+  exclude: ["/api/*", "/admin/*", "/thank-you"], // optional exclusion
+  generateIndexSitemap: false, // avoid self-referencing sitemap loops
   robotsTxtOptions: {
     policies: [
       {
         userAgent: "*",
         allow: "/",
       },
+      {
+        userAgent: "*",
+        disallow: ["/api/*", "/admin/*"],
+      },
     ],
-  },
-
-  transform: async (config, path) => {
-    return {
-      loc: path,
-      changefreq: path === "/" ? "daily" : "weekly",
-      priority: path === "/" ? 1.0 : 0.8,
-      lastmod: new Date().toISOString(),
-    };
+      additionalSitemaps: ["https://novrithtechnology.com/sitemap.xml"],
   },
 };

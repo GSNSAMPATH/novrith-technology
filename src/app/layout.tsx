@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     "Sumal Nadeera",
   ],
 
-  authors: [{ name: "Novrith Technology", url: "https://www.novrithtech.com" }],
+  authors: [{ name: "Novrith Technology", url: "https://www.novrithtechnology.com" }],
   creator: "Novrith Technology",
   publisher: "Novrith Technology",
 
@@ -69,26 +69,14 @@ export const metadata: Metadata = {
     ],
   },
 
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-      "max-video-preview": -1,
-    },
-  },
-
   alternates: {
-    canonical: "https://www.novrithtech.com",
+    canonical: "https://www.novrithtechnology.com",
   },
 
   openGraph: {
     type: "website",
     locale: "en_LK",
-    url: "https://www.novrithtech.com",
+    url: "https://www.novrithtechnology.com",
     siteName: "Novrith Technology",
     title: "Novrith Technology | Smart Software Solutions Sri Lanka",
     description:
@@ -109,7 +97,7 @@ export const metadata: Metadata = {
     description:
       "Future-ready web, mobile, AI, IoT, and custom software solutions built by Novrith Technology in Sri Lanka.",
     images: ["android-chrome-512x512.png"],
-    creator: "@NovrithTech",
+    creator: "@NovrithTechnology",
   },
 
   category: "Technology",

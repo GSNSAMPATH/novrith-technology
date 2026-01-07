@@ -8,6 +8,20 @@ import StatsSection from "./components/StatsSection";
 import TestimonialsSection from "./components/TestimonialsSection";
 import TrustedSection from "./components/TrustedSection";
 
+export const metadata = {
+  title: "Future-Ready Software Solutions in Sri Lanka",
+  description:
+    "Novrith Technology builds modern websites, mobile apps, AI-powered systems, and IoT solutions that help businesses scale and succeed.",
+  keywords: [
+    "Software development company Sri Lanka",
+    "Web & mobile solutions",
+    "AI software Sri Lanka",
+    "IoT development Sri Lanka",
+    "Business software solutions",
+  ],
+};
+
+
 export default function Home() {
   return (
       <>
