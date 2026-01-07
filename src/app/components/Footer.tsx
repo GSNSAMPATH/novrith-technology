@@ -107,9 +107,11 @@ export default function Footer() {
 
         <div className="flex gap-3">
           <SocialIcon href="https://www.facebook.com/share/1WVRemNaku/" icon={<FaFacebookF />} /> 
-          <SocialIcon href="https://x.com/NovrithT97600" icon={<FaXTwitter />} />
-          <SocialIcon href="https://www.linkedin.com/company/novrith-technology" icon={<FaLinkedinIn />} />
           <SocialIcon href="https://www.instagram.com/novrithtechnology/" icon={<FaInstagram />} />
+          <SocialIcon href="https://www.linkedin.com/company/novrith-technology" icon={<FaLinkedinIn />} />          
+          <SocialIcon href="https://x.com/NovrithT97600" icon={<FaXTwitter />} />
+
+
         </div>
       </div>
     </footer>
