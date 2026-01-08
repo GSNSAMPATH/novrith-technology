@@ -67,7 +67,7 @@ export default function MissionVisionSection() {
                 {item.title}
               </h1>
 
-              <p className="text-[#888888] font-inter-medium text-[14px] md:text-[16px] lg:text-[20px] max-w-2xl mx-auto leading-relaxed ">
+              <p className="text-[#888888] font-inter-medium text-[14px] md:text-[16px] lg:text-[20px] max-w-2xl leading-relaxed ">
                 {item.content}
               </p>
                <p className="text-[#888888] font-inter-medium text-[14px] md:text-[16px] lg:text-[20px] max-w-[200px] md:max-w-xl leading-relaxed ">
