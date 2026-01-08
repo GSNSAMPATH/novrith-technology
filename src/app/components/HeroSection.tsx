@@ -44,11 +44,8 @@ export default function HeroSection() {
       <div className="absolute inset-0 bg-gradient-to-b from-[#00000070] via-[#00000040] to-[#030419] z-0" />
 
       {/* 🔹 Content */}
-      <motion.div
+      <div
         className="relative z-10 px-6 lg:px-24 max-w-5xl mx-auto"
-        initial={{ opacity: 0, y: 40 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1, ease: "easeOut" }}
       >
         {/* 🔥 Animated Gradient Title */}
         <h1
@@ -116,7 +113,7 @@ export default function HeroSection() {
             </div>
           </motion.a>
         </motion.div>
-      </motion.div>
+      </div>
     </section>
   );
 }
