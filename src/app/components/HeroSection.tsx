@@ -44,12 +44,18 @@ export default function HeroSection() {
       <div className="absolute inset-0 bg-gradient-to-b from-[#00000070] via-[#00000040] to-[#030419] z-0" />
 
       {/* 🔹 Content */}
-      <div
+      <motion.div
         className="relative z-10 px-6 lg:px-24 max-w-5xl mx-auto"
+        initial={{ opacity: 0, y: 40 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, ease: "easeOut" }}
       >
         {/* 🔥 Animated Gradient Title */}
-        <h1
+        <motion.h1
           className="font-zendots tracking-wide text-[20px] md:text-[30px] lg:text-[40px] font-bold leading-tight mb-4 md:mb-6"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.3, duration: 0.8 }}
           style={{
             backgroundImage: `radial-gradient(at ${pos.x}% ${pos.y}%, #81f1b5 0%, #e9fffd 80%)`,
             WebkitBackgroundClip: "text",
@@ -61,16 +67,19 @@ export default function HeroSection() {
           WE DESIGN THE FUTURE
           <br />
           YOU EXPERIENCE IT
-        </h1>
+        </motion.h1>
 
         {/* Subtitle */}
-        <p
+        <motion.p
           className="text-[#9C9C9C] font-inter-medium text-[14px] md:text-[16px] lg:text-[20px] max-w-2xl mx-auto leading-relaxed mb-6 md:mb-12"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.6, duration: 0.8 }}
         >
           We create intelligent, design-driven digital solutions that bridge the
           gap from software to AI systems that power businesses, simplify lives,
           and shape tomorrow.
-        </p>
+        </motion.p>
 
         {/* Buttons */}
         <motion.div
@@ -113,7 +122,7 @@ export default function HeroSection() {
             </div>
           </motion.a>
         </motion.div>
-      </div>
+      </motion.div>
     </section>
   );
 }
