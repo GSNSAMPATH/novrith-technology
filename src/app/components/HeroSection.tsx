@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 
 
+
 export default function HeroSection() {
   const [pos, setPos] = useState({ x: 50, y: 50 });
 

@@ -67,7 +67,7 @@ export default function TestimonialsSection() {
               className="service-card2 cursor-pointer p-[1.7px]"
             >
               <div className="service-card p-6 text-left">
-                <h2 className="text-3xl font-bold mb-4">“</h2>
+                <h2 className="text-3xl font-bold">“</h2>
                 <p className="mb-4 text-gray-300 font-inter-medium text-[12px] md:text-[14px] lg:text-[16px]">{item.description}</p>
                 <p className="font-bold text-white">{item.name}</p>
               </div>
